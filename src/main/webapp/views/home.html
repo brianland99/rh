@@ -1,0 +1,120 @@
+<!-- -------------------------------------------- -->
+<!-- Build the data model                         -->
+<!-- -------------------------------------------- -->
+
+<!-- Define a search platform to fetch data from -->
+<search:platform var="platform" conf="platforms.fusion.banner"></search:platform>
+
+<!-- Search for customer attributes -->
+<search:query var="query" parameters="none" max-results="5">
+    <query:custom name="userId" value="{{params.userId}}"></query:custom>
+    <query-filter field="taxoStyle_s" value="Smartphones"></query-filter>
+</search:query>
+
+<search:query var="sliderQuery" parameters="none" filters="taxoStyle_s['Smartphones']" max-results="3">
+    <query:custom name="userId" value="{{params.userId}}"></query:custom>
+</search:query>
+
+<!-- Send query to platform and retrieve documents back -->
+<search:response var="response" platform="platform" query="query">
+    <widget:spinner></widget:spinner>
+</search:response>
+
+<search:response var="sliderResponse" platform="platform" query="sliderQuery"></search:response>
+
+<!-- -------------------------------------------- -->
+<!-- Define the view                              -->
+<!-- -------------------------------------------- -->
+
+<helper:title title="Welcome!"></helper:title>
+
+<!-- HEADER -->
+<layout:include file="views/partials/header.tpl.html" action="search" class="top-header"></layout:include>
+
+<!-- CONTENT -->
+<layout:grid styling="row-offcanvas" class="home-page">
+    <!-- Animate page when response received -->
+    <layout:animate animation="animate-fadeInUp" on="response" layout-grid>
+
+        <layout:block>
+                <layout:grid>
+
+                    <layout:block>
+                        <widget:carousel height="500px" carousel-watch="sliderResponse" auto-play="true">
+                            <slidecontainer>
+                                <slide class="demo" ng-repeat="item in sliderResponse.results">
+                                    <!--{{item}}-->
+                                    <search:result result="item.result">
+                                        <layout:grid>
+                                            <layout:block md="1-2" class="info">
+                                                <layout:box>
+                                                    <p class="cat">{{result.fields.styleIndicator_s.val | actualValue}}</p>
+                                                    <h3>{{result.fields.productName_s.val | actualValue}}</h3>
+                                                    <p>{{result.fields.selling_point_search.val | actual}}</p>
+                                                    <a class="btn" href="#/search/{{result.fields.sku_no.val | actualValue}}">Shop Now</a>
+    <search:field name="longDescription_t" label="" styling="description" class="inline-txt"></search:field>
+
+                                                </layout:box>
+                                            </layout:block>
+                                            <layout:block md="1-2">
+                                                <layout:box>
+                                                        <img class="product-image" ng-if="result.fields.largeJpgImageURL_s.val"
+                                             ng-src="{{result.fields.largeJpgImageURL_s.val | actualValue}}"
+                                             default-src="assets/missing.jpg"/>
+                                                </layout:box>
+                                            </layout:block>
+                                        </layout:grid>
+                                    </search:result>
+                                </slide>
+
+                            </slidecontainer>
+                        </widget:carousel>
+                    </layout:block>
+
+                    <layout:block class="recommended-wrapper">
+                        <layout:box>
+                            <h3>Recommendations</h3>
+                            <search:result-list response="response" styling="cards-sm-1 cards-md-4 cards-lg-4">
+                                <search:result>
+
+                                    <div class="product-image-container">
+                                        <!--<img class="product-image-missing" ng-src="assets/missing.png"/>-->
+                                        <!--<img class="product-image" ng-src="https://www.bhphotovideo.com/images/images50x50/{{result.fields.item_url.val | actualValue}}_{{result.fields.image_name.val | actual}}.jpg" onerror="this.style.display='none';"/>-->
+                                        <!--<img class="product-image" ng-src="https://www.bhphotovideo.com/images/images100x100/{{result.fields.item_url.val | actualValue}}_{{result.fields.image_name.val | actual}}.jpg" onerror="this.style.display='none';"/>-->
+                                        <!--<img class="product-image" ng-src="https://www.bhphotovideo.com/images/images150x150/{{result.fields.item_url.val | actualValue}}_{{result.fields.image_name.val | actual}}.jpg" onerror="this.style.display='none';"/>-->
+                                        <!--<img class="product-image" ng-src="https://www.bhphotovideo.com/images/images250x250/{{result.fields.item_url.val | actualValue}}_{{result.fields.image_name.val | actual}}.jpg" onerror="this.style.display='none';"/>-->
+                                        <!--<img class="product-image" ng-src="https://www.bhphotovideo.com/images/images500x500/{{result.fields.item_url.val | actualValue}}_{{result.fields.image_name.val | actual}}.jpg" onerror="this.style.display='none';"/>-->
+                                        <!--<img class="product-image" ng-src="https://www.bhphotovideo.com/images/images2500x2500/{{result.fields.item_url.val | actualValue}}_{{result.fields.image_name.val | actual}}.jpg" onerror="this.style.display='none';"/>-->
+                                        <!--<img class="product-image" ng-if="result.fields.item_url.val"-->
+                                             <!--ng-src="https://www.bhphotovideo.com/images/images500x500/{{result.fields.item_url.val | actualValue}}_{{result.fields.image_name.val | actual}}.jpg"-->
+                                             <!--onerror="this.style.display='none';"/>-->
+                                          <img class="product-image" ng-if="result.fields.imageURL_s.val"
+                                             ng-src="{{result.fields.imageURL_s.val | actualValue}}"
+                                             default-src="assets/missing.jpg"/>
+                                        <img ng-if="!result.fields.imageURL_s.val"  class="product-image-missing" ng-src="assets/missing.jpg"/>
+                                    </div>
+                                    <search:field name="styleIndicator_s" styling="label-left" label="" class="cat" >
+                                          <search:field name="deviceType_s" styling="label-left" label="" class="cat" ></search:field>
+                                    </search:field>
+                                        <search:field name="productName_s" styling="title" url="#/search/{{result.fields.skuId_s.val | actualValue}}"></search:field>
+                                    <search:field name="skuId_s" styling="label-left" label="SKU"></search:field>
+                                    <search:field name="ATTNextCommitmentTerm_24_Price_s" styling="label-left" label="" prefix="$" class="price"></search:field>
+
+                                </search:result>
+                            </search:result-list>
+                        </layout:box>
+                    </layout:block>
+
+                </layout:grid>
+        </layout:block>
+
+        <svg class="first-svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 227 320">
+            <path d="M136 100C102.73 67.42 118.42 0 64.74 0A327.57 327.57 0 0 0 0 6.64v301.89C21.56 315.87 43.57 320 64.74 320c44.36 0 49.7-34.75 81.26-58 39.84-29.35 81-44.69 81-94 0-41.11-62.06-39.66-91-68z" fill="#799e3e"/>
+        </svg>
+        <svg class="sec-svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 185.19 187.67">
+            <path d="M84.59 2.5c24.19-11.49 62.06 17.61 84.57 65s21.15 95.13-3 106.62S26.51 204.43 3.99 157.03 60.4 14 84.59 2.5z" fill="#799e3e"/>
+        </svg>
+
+    </layout:animate>
+</layout:grid>
+

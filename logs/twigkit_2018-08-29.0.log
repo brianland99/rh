@@ -1,0 +1,1479 @@
+08:25:22.286 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -  
+08:25:22.299 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -                                                              
+08:25:22.299 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -  ████╗ █████╗ █████╗   █████╗██████╗██╗ ██╗█████╗ ██╗ ████╗  
+08:25:22.299 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - ██╔═██╗██╔═██╗██╔═██╗  ██╔══╝╚═██╔═╝██║ ██║██╔═██╗██║██╔═██╗ 
+08:25:22.299 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - ██████║█████╔╝█████╔╝  █████╗  ██║  ██║ ██║██║ ██║██║██║ ██║ 
+08:25:22.299 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - ██╔═██║██╔══╝ ██╔══╝   ╚══██║  ██║  ██║ ██║██║ ██║██║██║ ██║ 
+08:25:22.299 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - ██║ ██║██║    ██║      █████║  ██║  ╚████╔╝█████╔╝██║╚████╔╝ 
+08:25:22.299 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - ╚═╝ ╚═╝╚═╝    ╚═╝      ╚════╝  ╚═╝   ╚═══╝ ╚════╝ ╚═╝ ╚═══╝  
+08:25:22.299 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -                                                              
+08:25:22.299 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -                     Lovingly crafted in 
+08:25:22.299 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -                          Cambridge 
+08:25:22.299 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -  
+08:25:22.299 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -  
+08:25:22.303 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -      App Studio is starting in DEVELOPMENT mode... 
+08:25:22.304 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -  
+08:25:22.304 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -  
+08:25:22.304 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - Built with Appkit version 4.0.0-SNAPSHOT 
+08:25:22.304 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -  
+08:25:22.407 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m - CORS 
+08:25:22.408 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   |-- cors.supportedMethods = GET, POST, DELETE, HEAD 
+08:25:22.408 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   |-- cors.allowOrigin = * 
+08:25:22.408 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m - TWIGKIT 
+08:25:22.408 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   |-- ui.trim-white-space = false 
+08:25:22.408 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   |-- license-file = file://./twigkit.lic 
+08:25:22.408 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m - ACTIVITY 
+08:25:22.408 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   | 
+08:25:22.408 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   +-- TRACKING 
+08:25:22.408 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:25:22.408 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- TRACKER 
+08:25:22.408 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- events = click, query, request, response, login, annotation # or any subset thereof 
+08:25:22.408 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m - MESSAGE 
+08:25:22.408 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   | 
+08:25:22.408 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   +-- SERVICE 
+08:25:22.408 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:25:22.408 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- FUSION 
+08:25:22.408 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- async = false 
+08:25:22.409 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- signals-endpoint = http://ec2-34-220-70-38.us-west-2.compute.amazonaws.com/:8764/api/apollo/signals/att_test 
+08:25:22.409 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- password = usdfls*383s#2 
+08:25:22.409 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- impersonate = true 
+08:25:22.409 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- //Configre = the admin account that has write access to the signals API. 
+08:25:22.409 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- commit = true 
+08:25:22.409 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- signals-index-pipeline = _signals_ingest 
+08:25:22.409 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- userName = admin 
+08:25:22.409 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- //Configure = your indexing pipeline for signals 
+08:25:22.409 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m - PLATFORMS 
+08:25:22.409 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   | 
+08:25:22.409 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   +-- FUSION 
+08:25:22.409 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- backwardsCompatible = true 
+08:25:22.409 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- collection = att_shop 
+08:25:22.409 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- userName = admin 
+08:25:22.409 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- timeOut = 30000 
+08:25:22.409 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- highlight = true 
+08:25:22.409 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- password = password123 
+08:25:22.409 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- impersonate = true 
+08:25:22.409 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- query-profile = att_shop 
+08:25:22.410 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- name = twigkit.search.fusion.Fusion 
+08:25:22.410 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- host = 54.202.231.194 
+08:25:22.410 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- resultIDField = id 
+08:25:22.410 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- defaultQuery = *:* 
+08:25:22.410 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:25:22.410 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- BANNER 
+08:25:22.410 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- backwardsCompatible = true 
+08:25:22.410 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- collection = att_shop 
+08:25:22.410 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- userName = admin 
+08:25:22.410 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- timeOut = 30000 
+08:25:22.410 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- highlight = true 
+08:25:22.410 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- password = password123 
+08:25:22.410 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- impersonate = true 
+08:25:22.410 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- query-profile = homepage-banner-shop 
+08:25:22.410 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- name = twigkit.search.fusion.Fusion 
+08:25:22.410 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- host = 54.202.231.194 
+08:25:22.410 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- resultIDField = id 
+08:25:22.410 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- defaultQuery = *:* 
+08:25:22.410 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:25:22.410 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- ITEM_RECS 
+08:25:22.411 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- backwardsCompatible = true 
+08:25:22.411 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- collection = att_shop 
+08:25:22.411 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- userName = admin 
+08:25:22.411 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- timeOut = 30000 
+08:25:22.411 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- highlight = true 
+08:25:22.411 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- password = password123 
+08:25:22.411 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- impersonate = true 
+08:25:22.411 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- query-profile = att_item_recommendations 
+08:25:22.411 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- name = twigkit.search.fusion.Fusion 
+08:25:22.411 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- host = 54.202.231.194 
+08:25:22.411 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- resultIDField = id 
+08:25:22.411 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- defaultQuery = *:* 
+08:25:22.411 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:25:22.411 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- LOGS 
+08:25:22.411 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- backwardsCompatible = true 
+08:25:22.411 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- collection = att_shop 
+08:25:22.411 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- userName = admin 
+08:25:22.411 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- timeOut = 30000 
+08:25:22.411 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- highlight = true 
+08:25:22.411 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- password = password123 
+08:25:22.411 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- impersonate = true 
+08:25:22.411 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- query-profile = att_shop 
+08:25:22.412 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- name = twigkit.search.fusion.Fusion 
+08:25:22.412 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- host = 54.202.231.194 
+08:25:22.412 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- resultIDField = id 
+08:25:22.412 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- defaultQuery = *:* 
+08:25:22.412 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:25:22.412 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- PEOPLE 
+08:25:22.412 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- backwardsCompatible = true 
+08:25:22.412 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- collection = att_shop 
+08:25:22.412 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- userName = admin 
+08:25:22.412 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- timeOut = 30000 
+08:25:22.412 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- highlight = true 
+08:25:22.412 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- password = password123 
+08:25:22.412 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- impersonate = true 
+08:25:22.412 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- query-profile = att_shop 
+08:25:22.412 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- name = twigkit.search.fusion.Fusion 
+08:25:22.412 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- host = 54.202.231.194 
+08:25:22.412 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- resultIDField = id 
+08:25:22.412 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- defaultQuery = *:* 
+08:25:22.412 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:25:22.412 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- SIGNALS 
+08:25:22.412 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- backwardsCompatible = true 
+08:25:22.413 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- collection = att_shop 
+08:25:22.413 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- userName = admin 
+08:25:22.413 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- timeOut = 30000 
+08:25:22.413 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- highlight = true 
+08:25:22.413 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- password = password123 
+08:25:22.413 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- impersonate = true 
+08:25:22.413 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- query-profile = att_shop 
+08:25:22.413 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- name = twigkit.search.fusion.Fusion 
+08:25:22.413 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- host = 54.202.231.194 
+08:25:22.413 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- resultIDField = id 
+08:25:22.413 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- defaultQuery = *:* 
+08:25:22.413 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m - PROCESSORS 
+08:25:22.413 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   | 
+08:25:22.413 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   +-- RESPONSE 
+08:25:22.413 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:25:22.413 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- DATE-FORMAT 
+08:25:22.413 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- name = twigkit.client.processor.response.DateFormatProcessor 
+08:25:22.413 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- fields = Date 
+08:25:22.413 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- values = display 
+08:25:22.413 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m - SECURITY 
+08:25:22.413 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   |-- type = generic 
+08:25:22.413 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   |-- webservice-enabled = true 
+08:25:22.413 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   | 
+08:25:22.414 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   +-- FUSION 
+08:25:22.414 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- type = generic 
+08:25:22.414 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- webservice-enabled = true 
+08:25:22.414 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- realm-name = native 
+08:25:22.414 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- timeout = 28799 
+08:25:22.414 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m - SERVICES 
+08:25:22.414 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   | 
+08:25:22.414 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   +-- API 
+08:25:22.414 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:25:22.414 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- FUSION 
+08:25:22.419 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- password = usdfls*383s#2 
+08:25:22.419 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- protocol = http 
+08:25:22.419 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- port = 8764 
+08:25:22.419 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- host = http://ec2-34-220-70-38.us-west-2.compute.amazonaws.com 
+08:25:22.419 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- realm = native 
+08:25:22.419 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- userName = admin 
+08:25:22.420 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   | 
+08:25:22.420 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   +-- SUGGESTIONS 
+08:25:22.420 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:25:22.420 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- STATIC 
+08:25:22.420 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- numberOfSuggestions 
+08:25:22.420 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- name 
+08:25:22.420 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- host 
+08:25:22.420 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:25:22.420 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- TERMS 
+08:25:22.420 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- name = twigkit.search.solr.suggestions.SolrQueryTermsService 
+08:25:22.420 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- term-fields = title 
+08:25:22.420 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- source = platforms.fusion 
+08:25:22.420 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- title 
+08:25:22.426 [34mINFO [0;39m [36mtwigkit.InitializerModule[0;39m - Binding application-wide event bus 
+08:25:22.428 [34mINFO [0;39m [36mt.license.AbstractLicenseManager[0;39m - Initialising license expiry check monitor 
+08:25:22.429 [34mINFO [0;39m [36mtwigkit.license.PLM[0;39m - Attempting to load license from local filesystem path, file://./twigkit.lic 
+08:25:22.429 [34mINFO [0;39m [36mtwigkit.license.PLM[0;39m - Looking for license file /Users/brianland/twigkit.lic in user's home directory 
+08:25:22.433 [34mINFO [0;39m [36mtwigkit.license.PLM[0;39m - Using license file /Users/brianland/twigkit.lic 
+08:25:22.463 [34mINFO [0;39m [36mtwigkit.service.ServiceLoaderModule[0;39m - Loading and binding TwigKit Services... 
+08:25:22.487 [39mDEBUG[0;39m [36mt.ui.jsp.service.RSSSearchService[0;39m - Supported feed types: rss_0.91U, rss_1.0, rss_2.0, rss_0.93, rss_0.92, rss_0.94, rss_0.91N, rss_0.9, atom_0.3, atom_1.0 
+08:25:22.488 [34mINFO [0;39m [36mtwigkit.service.ServiceLoaderModule[0;39m - > twigkit.ui.jsp.service.RSSSearchService 
+08:25:22.490 [34mINFO [0;39m [36mtwigkit.service.ServiceLoaderModule[0;39m - > twigkit.service.StaticQuerySuggestionService 
+08:25:22.491 [34mINFO [0;39m [36mtwigkit.service.ServiceLoaderModule[0;39m - > twigkit.service.FieldSearchQuerySuggestionService 
+08:25:22.492 [34mINFO [0;39m [36mtwigkit.service.ServiceLoaderModule[0;39m - > twigkit.service.FacetSearchQuerySuggestionService 
+08:25:22.493 [34mINFO [0;39m [36mtwigkit.service.ServiceLoaderModule[0;39m - Done loading and binding TwigKit Services! 
+08:25:22.493 [34mINFO [0;39m [36mtwigkit.service.ServiceLoaderModule[0;39m - Binding TwigKit Service configurations... 
+08:25:22.493 [34mINFO [0;39m [36mtwigkit.service.ServiceLoaderModule[0;39m - Done binding TwigKit Platform configurations! 
+08:25:22.497 [34mINFO [0;39m [36mt.conf.ConfigurationProviderModule[0;39m - Binding TwigKit Platform configurations... 
+08:25:22.511 [34mINFO [0;39m [36mt.conf.ConfigurationProviderModule[0;39m - Done binding TwigKit Platform configurations! 
+08:25:22.512 [34mINFO [0;39m [36mtwigkit.Start[0;39m - Automatically loading TwigKitModules... 
+08:25:22.522 [34mINFO [0;39m [36mtwigkit.Start[0;39m - TwigKitModule Start-up order: 
+08:25:22.522 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 1. ActivityTrackerModule (HIGHEST) 
+08:25:22.522 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 2. ActivityModule (HIGHEST) 
+08:25:22.522 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 3. SecurityModule (HIGH) 
+08:25:22.522 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 4. FusionSignalsMessageProducerModule (MEDIUM) 
+08:25:22.522 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 5. FusionModule (LOWEST) 
+08:25:22.522 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 6. SolrModule (LOWEST) 
+08:25:22.522 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 7. JSPModule (LOWEST) 
+08:25:22.522 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 8. HttpModule (LOWEST) 
+08:25:22.522 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 9. CacheModule (LOWEST) 
+08:25:22.522 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 10. RecordingModule (LOWEST) 
+08:25:22.523 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 11. DriverRegistrationModule (LOWEST) 
+08:25:22.523 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 12. ConfigurationReloadModule (LOWEST) 
+08:25:22.523 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 13. LicenseRestrictionsModule (LOWEST) 
+08:25:22.523 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 14. WebServicesModule (LOWEST) 
+08:25:22.523 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 15. MediaModule (LOWEST) 
+08:25:22.523 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 16. WorkflowModule (LOWEST) 
+08:25:22.523 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 17. Wro4jModule (LOWEST) 
+08:25:22.599 [34mINFO [0;39m [36mtwigkit.activity.ActivityModule[0;39m - Activity tracker module loaded. All outbound field URLs are intercepted by default. 
+08:25:22.601 [34mINFO [0;39m [36mtwigkit.activity.ActivityModule[0;39m - Activity tracking framework module loaded. 
+08:25:22.605 [34mINFO [0;39m [36mtwigkit.security.SecurityModule[0;39m - Instantiating twigkit.security.provider.generic.RemoteUserSecurityProvider 
+08:25:22.607 [34mINFO [0;39m [36mtwigkit.security.SecurityModule[0;39m - DomainMappingFilter disabled 
+08:25:22.608 [34mINFO [0;39m [36mtwigkit.security.SecurityModule[0;39m - UserMappingFilter disabled 
+08:25:22.608 [34mINFO [0;39m [36mtwigkit.security.SecurityModule[0;39m - twigkit.security.filter.UserToGroupMappingFilter disabled 
+08:25:22.608 [34mINFO [0;39m [36mt.s.SecurityFilterExecutionModule[0;39m - Registering Authentication Filters... 
+08:25:22.610 [34mINFO [0;39m [36mt.s.SecurityFilterExecutionModule[0;39m - Registering Authorisation Filters... 
+08:25:22.612 [34mINFO [0;39m [36mtwigkit.security.SecurityModule[0;39m - Security Module loaded! 
+08:25:22.616 [34mINFO [0;39m [36mt.m.s.f.FusionSignalsMessageProducerModule[0;39m - Fusion message producer module loaded 
+08:25:22.626 [34mINFO [0;39m [36mtwigkit.search.fusion.FusionModule[0;39m - Fusion Platform Module loaded! 
+08:25:22.629 [34mINFO [0;39m [36mtwigkit.search.solr.SolrModule[0;39m - Solr Platform Module loaded! 
+08:25:22.631 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - Deploying TwigKitServlets... 
+08:25:22.637 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/services/query-suggestion-service/* -> JSONQuerySuggestionServiceServlet 
+08:25:22.638 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/services/platform/rss/* -> RSSSearchServiceServlet 
+08:25:22.640 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/services/proxy -> ProxyServlet 
+08:25:22.641 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/services/url -> RedirectServlet 
+08:25:22.642 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/services/activity/click -> ClickTrackingService 
+08:25:22.643 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/services/redirect/* -> RedirectServlet 
+08:25:22.644 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/services/migrate/* -> MigrationServlet 
+08:25:22.646 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/services/media/export/excel/* -> ExcelExportServlet 
+08:25:22.648 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/services/media/export/csv/* -> CSVExportServlet 
+08:25:22.649 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/services/media/export/offline/csv/* -> OfflineCSVExportServlet 
+08:25:22.649 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - Deploying SecureTwigKitServlets... 
+08:25:22.650 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/secure/services/url -> RedirectServlet 
+08:25:22.651 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - JSP Module loaded! 
+08:25:22.653 [34mINFO [0;39m [36mtwigkit.http.HttpModule[0;39m - CORS support enabled 
+08:25:22.653 [34mINFO [0;39m [36mtwigkit.http.HttpModule[0;39m - > cors.supportedMethods: GET, POST, DELETE, HEAD 
+08:25:22.653 [34mINFO [0;39m [36mtwigkit.http.HttpModule[0;39m - > cors.allowOrigin: * 
+08:25:22.654 [34mINFO [0;39m [36mtwigkit.http.HttpModule[0;39m - Not removing whitespace from HTML as per twigkit.properties [ui.jsp.trimWhiteSpace] 
+08:25:22.655 [34mINFO [0;39m [36mtwigkit.http.HttpModule[0;39m - Http Module loaded! 
+08:25:22.742 [34mINFO [0;39m [36mtwigkit.cache.CacheModule[0;39m - Cache Module loaded! 
+08:25:22.743 [39mDEBUG[0;39m [36mt.c.reload.ConfigurationReloadModule[0;39m - Registering application configuration with configuration watcher ... 
+08:25:22.747 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/ 
+08:25:22.750 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/activity/ 
+08:25:22.750 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/activity/tracking/ 
+08:25:22.750 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/message/ 
+08:25:22.751 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/message/service/ 
+08:25:22.751 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/platforms/ 
+08:25:22.751 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/platforms/fusion/ 
+08:25:22.752 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/processors/ 
+08:25:22.752 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/processors/response/ 
+08:25:22.753 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/security/ 
+08:25:22.753 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/services/ 
+08:25:22.753 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/services/api/ 
+08:25:22.754 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/services/suggestions/ 
+08:25:22.756 [34mINFO [0;39m [36mt.c.reload.ConfigurationReloadModule[0;39m - Configuration Reload Module loaded! 
+08:25:22.758 [34mINFO [0;39m [36mt.license.LicenseRestrictionsModule[0;39m - License Restrictions Module loaded! 
+08:25:22.771 [34mINFO [0;39m [36mtwigkit.service.WebServicesModule[0;39m - Web Services Module loaded! 
+08:25:23.089 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Supported image formats: 
+08:25:23.090 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- JPG 
+08:25:23.090 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- JPEG 2000 
+08:25:23.090 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- tiff 
+08:25:23.090 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- bmp 
+08:25:23.090 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- gif 
+08:25:23.091 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- WBMP 
+08:25:23.091 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- PNG 
+08:25:23.091 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- RAW 
+08:25:23.091 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- JPEG 
+08:25:23.091 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- btiff 
+08:25:23.091 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- PNM 
+08:25:23.091 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- tif 
+08:25:23.091 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- TIFF 
+08:25:23.091 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- jpeg 
+08:25:23.091 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- wbmp 
+08:25:23.091 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- jpg 
+08:25:23.091 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- JPEG2000 
+08:25:23.091 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- BMP 
+08:25:23.091 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- GIF 
+08:25:23.091 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- png 
+08:25:23.091 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- raw 
+08:25:23.091 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- pnm 
+08:25:23.091 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- TIF 
+08:25:23.091 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- jpeg2000 
+08:25:23.091 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- jpeg 2000 
+08:25:23.091 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- BTIFF 
+08:25:23.091 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Media Module loaded! 
+08:25:23.094 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - Binding Processor classes... 
+08:25:23.096 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.solr.processors.SolrDateRangeFacetQueries 
+08:25:23.097 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.solr.processors.SolrDateRangeFacetResponse 
+08:25:23.098 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.security.processor.AddFilterProcessor 
+08:25:23.099 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.security.processor.AddRolesFilterProcessor 
+08:25:23.099 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.security.processor.RoleLocalizer 
+08:25:23.100 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.query.AddFilterProcessor 
+08:25:23.100 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.query.CompositeFieldProcessor 
+08:25:23.101 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.query.ReplaceFilterValue 
+08:25:23.102 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.CopyFacetProcessor 
+08:25:23.102 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.CopyFieldProcessor 
+08:25:23.103 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.CreateFacetProcessor 
+08:25:23.104 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.DateFacetValueFormatter 
+08:25:23.105 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.DatePartExtractor 
+08:25:23.106 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.DateRangeFacetProcessor 
+08:25:23.107 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.FacetFilterSortByCount 
+08:25:23.126 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.FacetFilterSortByValue 
+08:25:23.127 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.FacetFilterValueMappingProcessor 
+08:25:23.128 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.FacetParameterProcessor 
+08:25:23.129 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.FacetSortProcessor 
+08:25:23.130 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.FieldDateParser 
+08:25:23.131 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.FieldToMultiValueFieldProcessor 
+08:25:23.132 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.HostNameExtractor 
+08:25:23.133 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.LinkMarkupProcessor 
+08:25:23.133 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.RegExFieldValueTaggerProcessor 
+08:25:23.134 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.RemoveFacetFiltersByRegex 
+08:25:23.134 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.RemoveFacetsProcessor 
+08:25:23.135 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.ReplaceFieldValue 
+08:25:23.136 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.ReplaceFilterValue 
+08:25:23.136 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.ResponseLoggingProcessor 
+08:25:23.137 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.ResultGroupProcessor 
+08:25:23.138 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.ShallowFacetGenerator 
+08:25:23.139 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.ShallowHierarchicalFacetProcessor 
+08:25:23.139 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.TweetMarkupProcessor 
+08:25:23.140 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.FieldValueParser 
+08:25:23.140 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.FacetSequenceHierarchy 
+08:25:23.141 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.LocaliseValues 
+08:25:23.142 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - Done binding Processor classes! 
+08:25:23.143 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - Processor Module loaded! 
+08:25:23.147 [39mDEBUG[0;39m [36mtwigkit.ui.js.wro4j.WroConfiguration[0;39m - In DEVELOPMENT mode - registering a 5 second resource watcher interval 
+08:25:23.148 [34mINFO [0;39m [36mtwigkit.ui.js.Wro4jModule[0;39m - Wro4j Module loaded! 
+08:25:23.148 [34mINFO [0;39m [36mtwigkit.Start[0;39m - All TwigKitModules loaded! 
+08:25:23.149 [34mINFO [0;39m [36mtwigkit.InitializerModule[0;39m - TwigKit Module loaded! 
+08:25:23.494 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - App Studio Guice Injector ready! 
+08:25:23.494 [34mINFO [0;39m [36mtwigkit.Start[0;39m - Notifying all modules that injector is ready 
+08:25:23.495 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -  
+08:25:23.496 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - Host: Sanket’s-MacBook-Pro 
+08:25:23.496 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -  
+08:25:23.499 [39mDEBUG[0;39m [36mt.f.api.session.FusionSessionStore[0;39m - Initialising Fusion session store. Each session will last for 28799000 milliseconds unless the session times out due to a prolonged period of inactivity. 
+08:25:23.508 [1;31mERROR[0;39m [36mt.m.s.f.FusionSignalsMessageProducer[0;39m - Unable to construct a valid URL to the Signals API: {} 
+java.lang.IllegalArgumentException: The Fusion Signals configuration is missing a 'collection' parameter - unable to construct a valid URL to the Signals API
+	at twigkit.message.service.fusion.util.SignalsApiRequestBuilder.getExtension(SignalsApiRequestBuilder.java:33) ~[twigkit.message.service.fusion.producer-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at twigkit.fusion.api.FusionWebserviceRequestBuilder.getURLPath(FusionWebserviceRequestBuilder.java:65) ~[twigkit.fusion.api-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at twigkit.fusion.api.FusionWebserviceRequestBuilder.build(FusionWebserviceRequestBuilder.java:60) ~[twigkit.fusion.api-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at twigkit.message.service.fusion.FusionSignalsMessageProducer.getSignalsUrl(FusionSignalsMessageProducer.java:216) [twigkit.message.service.fusion.producer-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at twigkit.message.service.fusion.FusionSignalsMessageProducer.configure(FusionSignalsMessageProducer.java:126) [twigkit.message.service.fusion.producer-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at twigkit.message.service.fusion.FusionSignalsMessageProducer.<init>(FusionSignalsMessageProducer.java:107) [twigkit.message.service.fusion.producer-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at twigkit.message.service.fusion.FusionSignalsMessageProducer$$FastClassByGuice$$dad42023.newInstance(<generated>) [guice-4.0.jar:4.0.0-SNAPSHOT]
+	at com.google.inject.internal.cglib.reflect.$FastConstructor.newInstance(FastConstructor.java:40) [guice-4.0.jar:na]
+	at com.google.inject.internal.DefaultConstructionProxyFactory$1.newInstance(DefaultConstructionProxyFactory.java:61) [guice-4.0.jar:na]
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:105) [guice-4.0.jar:na]
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:85) [guice-4.0.jar:na]
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267) [guice-4.0.jar:na]
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46) [guice-4.0.jar:na]
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103) [guice-4.0.jar:na]
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40) [guice-4.0.jar:na]
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:145) [guice-4.0.jar:na]
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41) [guice-4.0.jar:na]
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56) [guice-4.0.jar:na]
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016) [guice-4.0.jar:na]
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092) [guice-4.0.jar:na]
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012) [guice-4.0.jar:na]
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1051) [guice-4.0.jar:na]
+	at twigkit.activity.ActivityTrackerModule.afterInjectorInitialised(ActivityTrackerModule.java:104) [twigkit.activity.tracker-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at twigkit.Start$2.injectorReady(Start.java:85) [twigkit.commons-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_152]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_152]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_152]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_152]
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74) [guava-18.0.jar:na]
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47) [guava-18.0.jar:na]
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322) [guava-18.0.jar:na]
+	at com.google.common.eventbus.AsyncEventBus.access$001(AsyncEventBus.java:34) [guava-18.0.jar:na]
+	at com.google.common.eventbus.AsyncEventBus$1.run(AsyncEventBus.java:117) [guava-18.0.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_152]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_152]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_152]
+08:25:23.512 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - License VALID until Wed Nov 14 23:00:00 CST 2018 
+08:25:23.512 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - Licensed host: * 
+08:25:23.512 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - Licensed email address: license@lucidworks.com 
+08:25:23.512 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - Licensed modules: 
+08:25:23.514 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > fusion(scope: unlimited) 
+08:25:23.514 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > environment(scope: [Ljava.lang.String;@3d7314b3) 
+08:25:23.514 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > fusion.connectors(scope: unlimited) 
+08:25:23.514 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > fusion.server(scope: unlimited) 
+08:25:23.515 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > security(scope: unlimited) 
+08:25:23.515 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > webservices(scope: unlimited) 
+08:25:23.515 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > workflow(scope: unlimited) 
+08:25:23.515 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > solr(scope: unlimited) 
+08:25:23.515 [31mWARN [0;39m [36mt.conf.AbstractConfigurationProvider[0;39m - Class not found for [activity.signal.processing.click] 
+08:25:23.515 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > organisation(scope: [Ljava.lang.String;@d677be9) 
+08:25:23.515 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > media(scope: unlimited) 
+08:25:23.515 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > user(scope: [Ljava.lang.String;@fefb66c) 
+08:25:23.515 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -  
+08:25:23.518 [31mWARN [0;39m [36mt.conf.AbstractConfigurationProvider[0;39m - Class not found for [activity.signal.processing.request] 
+08:25:23.520 [31mWARN [0;39m [36mt.conf.AbstractConfigurationProvider[0;39m - Class not found for [activity.signal.processing.response] 
+08:25:23.522 [31mWARN [0;39m [36mt.conf.AbstractConfigurationProvider[0;39m - Class not found for [activity.signal.processing.login] 
+08:25:23.524 [34mINFO [0;39m [36mt.s.SecurityFilterExecutionModule[0;39m - Initialising SecurityFilters... 
+08:25:23.524 [34mINFO [0;39m [36mt.security.filter.RemoteUserFilter[0;39m - Using RemoteUserFilter to add Users (from HttpServletRequest RemoteUser attribute) to SecurityContext 
+08:25:23.524 [34mINFO [0;39m [36mt.s.SecurityFilterExecutionModule[0;39m - > AuthenticationFilter [RemoteUserFilter] initialised! 
+08:25:23.645 [39mDEBUG[0;39m [36mtwigkit.ui.js.wro4j.WroConfiguration[0;39m - In DEVELOPMENT mode - registering a 5 second resource watcher interval 
+08:25:23.779 [31mWARN [0;39m [36mt.m.servlet.OfflineCSVExportServlet[0;39m - No configuration found for offline export under services/media/export/offline. Default settings used. 
+08:25:23.779 [34mINFO [0;39m [36mt.m.servlet.OfflineCSVExportServlet[0;39m - Initialised offline export servlet with the following properties: 
+08:25:23.779 [34mINFO [0;39m [36mt.m.servlet.OfflineCSVExportServlet[0;39m - 	- folder: offline-exports 
+08:25:23.779 [34mINFO [0;39m [36mt.m.servlet.OfflineCSVExportServlet[0;39m - 	- compress: false 
+08:25:23.780 [34mINFO [0;39m [36mt.m.servlet.OfflineCSVExportServlet[0;39m - 	- temp folder: /var/folders/3h/7jwpt2gd69n0r04xgbt7r9zr0000gn/T 
+08:25:23.780 [34mINFO [0;39m [36mt.m.servlet.OfflineCSVExportServlet[0;39m - 	- redirect path: /export-in-progress/ 
+08:25:24.640 [34mINFO [0;39m [36mtwigkit.frame.CachedImageIOService[0;39m - CachedImageIOService offline path: /tmp/twigkit/offline 
+08:25:24.644 [39mDEBUG[0;39m [36mtwigkit.frame.CachedImageIOService[0;39m - Creating cache from defaults! 
+08:25:24.719 [34mINFO [0;39m [36mtwigkit.frame.CachedImageIOService[0;39m - CachedImageIOService offline path: /tmp/twigkit/offline 
+08:26:22.432 [39mDEBUG[0;39m [36mt.license.LicenseMonitor$ExpiryCheck[0;39m - Scheduling new license expiry notification with MONTHLY frequency 
+08:26:22.436 [31mWARN [0;39m [36mtwigkit.ApplicationAlertSubscriber[0;39m - The license for Twigkit expires on: 14 Nov 2018 23:00:00 
+08:26:49.697 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - Shutting down... 
+08:26:49.698 [39mDEBUG[0;39m [36mtwigkit.cache.CacheModule[0;39m - Shutting down Cachalot cache manager 
+08:26:49.705 [39mDEBUG[0;39m [36mt.c.platform.PlatformCacheProvider[0;39m - Creating new PlatformCacheProvider 
+08:26:49.709 [34mINFO [0;39m [36mt.driver.DriverRegistrationModule[0;39m - De-registering JDBC driver org.apache.solr.client.solrj.io.sql.DriverImpl@5bc442cc 
+08:26:49.710 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Closing configuration watcher service. 
+08:26:49.711 [34mINFO [0;39m [36mtwigkit.frame.CachedImageIOService[0;39m - CachedImageIOService offline path: /tmp/twigkit/offline 
+08:26:49.715 [39mDEBUG[0;39m [36mtwigkit.frame.CachedImageIOService[0;39m - Shutting down cache manager for cache frame-cache 
+08:26:49.720 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.sun.media.imageioimpl.plugins.jpeg2000.J2KImageReaderSpi 
+08:26:49.720 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.twelvemonkeys.imageio.plugins.jpeg.JPEGImageReaderSpi 
+08:26:49.720 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.sun.media.imageioimpl.plugins.raw.RawImageReaderSpi 
+08:26:49.720 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class it.geosolutions.imageioimpl.plugins.tiff.TIFFImageReaderSpi 
+08:26:49.720 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.sun.media.imageioimpl.plugins.bmp.BMPImageReaderSpi 
+08:26:49.720 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.sun.media.imageioimpl.plugins.pnm.PNMImageReaderSpi 
+08:26:49.720 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.sun.media.imageioimpl.plugins.wbmp.WBMPImageReaderSpi 
+08:26:49.720 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.sun.media.imageioimpl.plugins.tiff.TIFFImageReaderSpi 
+08:26:49.720 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Media Module shutdown complete. 
+08:26:49.720 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.sun.media.imageioimpl.stream.ChannelImageInputStreamSpi 
+08:26:49.720 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Media Module shutdown complete. 
+08:26:49.720 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.sun.media.imageioimpl.plugins.pnm.PNMImageWriterSpi 
+08:26:49.720 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.sun.media.imageioimpl.plugins.wbmp.WBMPImageWriterSpi 
+08:26:49.720 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class it.geosolutions.imageioimpl.plugins.tiff.TIFFImageWriterSpi 
+08:26:49.720 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.sun.media.imageioimpl.plugins.jpeg2000.J2KImageWriterSpi 
+08:26:49.720 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.sun.media.imageioimpl.plugins.gif.GIFImageWriterSpi 
+08:26:49.720 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.sun.media.imageioimpl.plugins.bmp.BMPImageWriterSpi 
+08:26:49.720 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.sun.media.imageioimpl.plugins.raw.RawImageWriterSpi 
+08:26:49.721 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.twelvemonkeys.imageio.plugins.jpeg.JPEGImageWriterSpi 
+08:26:49.721 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.sun.media.imageioimpl.plugins.tiff.TIFFImageWriterSpi 
+08:26:49.721 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Media Module shutdown complete. 
+08:26:49.721 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Media Module shutdown complete. 
+08:26:49.721 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.sun.media.imageioimpl.stream.ChannelImageOutputStreamSpi 
+08:26:49.721 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Media Module shutdown complete. 
+08:26:49.721 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - Shutting down... 
+08:27:48.501 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -  
+08:27:48.504 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -                                                              
+08:27:48.504 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -  ████╗ █████╗ █████╗   █████╗██████╗██╗ ██╗█████╗ ██╗ ████╗  
+08:27:48.504 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - ██╔═██╗██╔═██╗██╔═██╗  ██╔══╝╚═██╔═╝██║ ██║██╔═██╗██║██╔═██╗ 
+08:27:48.504 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - ██████║█████╔╝█████╔╝  █████╗  ██║  ██║ ██║██║ ██║██║██║ ██║ 
+08:27:48.504 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - ██╔═██║██╔══╝ ██╔══╝   ╚══██║  ██║  ██║ ██║██║ ██║██║██║ ██║ 
+08:27:48.504 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - ██║ ██║██║    ██║      █████║  ██║  ╚████╔╝█████╔╝██║╚████╔╝ 
+08:27:48.505 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - ╚═╝ ╚═╝╚═╝    ╚═╝      ╚════╝  ╚═╝   ╚═══╝ ╚════╝ ╚═╝ ╚═══╝  
+08:27:48.505 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -                                                              
+08:27:48.505 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -                     Lovingly crafted in 
+08:27:48.505 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -                          Cambridge 
+08:27:48.505 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -  
+08:27:48.505 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -  
+08:27:48.509 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -      App Studio is starting in DEVELOPMENT mode... 
+08:27:48.510 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -  
+08:27:48.510 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -  
+08:27:48.510 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - Built with Appkit version 4.0.0-SNAPSHOT 
+08:27:48.511 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -  
+08:27:48.620 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m - CORS 
+08:27:48.620 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   |-- cors.supportedMethods = GET, POST, DELETE, HEAD 
+08:27:48.620 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   |-- cors.allowOrigin = * 
+08:27:48.620 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m - TWIGKIT 
+08:27:48.620 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   |-- ui.trim-white-space = false 
+08:27:48.620 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   |-- license-file = file://./twigkit.lic 
+08:27:48.621 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m - ACTIVITY 
+08:27:48.621 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   | 
+08:27:48.621 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   +-- TRACKING 
+08:27:48.621 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:27:48.621 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- TRACKER 
+08:27:48.621 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- events = click, query, request, response, login, annotation # or any subset thereof 
+08:27:48.621 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m - MESSAGE 
+08:27:48.621 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   | 
+08:27:48.621 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   +-- SERVICE 
+08:27:48.621 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:27:48.621 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- FUSION 
+08:27:48.621 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- async = false 
+08:27:48.621 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- signals-endpoint = http://ec2-34-220-70-38.us-west-2.compute.amazonaws.com/:8764/api/apollo/signals/att_test 
+08:27:48.621 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- password = usdfls*383s#2 
+08:27:48.621 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- impersonate = true 
+08:27:48.621 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- //Configre = the admin account that has write access to the signals API. 
+08:27:48.622 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- commit = true 
+08:27:48.622 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- signals-index-pipeline = _signals_ingest 
+08:27:48.622 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- userName = admin 
+08:27:48.622 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- //Configure = your indexing pipeline for signals 
+08:27:48.622 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m - PLATFORMS 
+08:27:48.622 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   | 
+08:27:48.622 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   +-- FUSION 
+08:27:48.622 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- backwardsCompatible = true 
+08:27:48.622 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- collection = att_shop 
+08:27:48.622 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- userName = admin 
+08:27:48.622 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- timeOut = 30000 
+08:27:48.622 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- highlight = true 
+08:27:48.623 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- password = password123 
+08:27:48.623 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- impersonate = true 
+08:27:48.623 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- query-profile = att_shop 
+08:27:48.623 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- name = twigkit.search.fusion.Fusion 
+08:27:48.623 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- host = 54.202.231.194 
+08:27:48.623 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- resultIDField = id 
+08:27:48.623 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- defaultQuery = *:* 
+08:27:48.623 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:27:48.623 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- BANNER 
+08:27:48.623 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- backwardsCompatible = true 
+08:27:48.623 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- collection = att_shop 
+08:27:48.623 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- userName = admin 
+08:27:48.623 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- timeOut = 30000 
+08:27:48.623 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- highlight = true 
+08:27:48.623 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- password = password123 
+08:27:48.623 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- impersonate = true 
+08:27:48.624 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- query-profile = homepage-banner-shop 
+08:27:48.624 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- name = twigkit.search.fusion.Fusion 
+08:27:48.624 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- host = 54.202.231.194 
+08:27:48.624 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- resultIDField = id 
+08:27:48.624 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- defaultQuery = *:* 
+08:27:48.624 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:27:48.624 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- ITEM_RECS 
+08:27:48.624 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- backwardsCompatible = true 
+08:27:48.624 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- collection = att_shop 
+08:27:48.624 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- userName = admin 
+08:27:48.624 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- timeOut = 30000 
+08:27:48.624 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- highlight = true 
+08:27:48.624 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- password = password123 
+08:27:48.624 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- impersonate = true 
+08:27:48.624 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- query-profile = att_item_recommendations 
+08:27:48.625 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- name = twigkit.search.fusion.Fusion 
+08:27:48.625 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- host = 54.202.231.194 
+08:27:48.625 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- resultIDField = id 
+08:27:48.625 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- defaultQuery = *:* 
+08:27:48.625 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:27:48.625 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- LOGS 
+08:27:48.625 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- backwardsCompatible = true 
+08:27:48.625 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- collection = att_shop 
+08:27:48.625 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- userName = admin 
+08:27:48.625 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- timeOut = 30000 
+08:27:48.625 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- highlight = true 
+08:27:48.625 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- password = password123 
+08:27:48.625 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- impersonate = true 
+08:27:48.626 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- query-profile = att_shop 
+08:27:48.626 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- name = twigkit.search.fusion.Fusion 
+08:27:48.626 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- host = 54.202.231.194 
+08:27:48.626 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- resultIDField = id 
+08:27:48.626 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- defaultQuery = *:* 
+08:27:48.626 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:27:48.626 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- PEOPLE 
+08:27:48.626 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- backwardsCompatible = true 
+08:27:48.626 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- collection = att_shop 
+08:27:48.626 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- userName = admin 
+08:27:48.627 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- timeOut = 30000 
+08:27:48.627 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- highlight = true 
+08:27:48.627 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- password = password123 
+08:27:48.627 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- impersonate = true 
+08:27:48.627 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- query-profile = att_shop 
+08:27:48.627 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- name = twigkit.search.fusion.Fusion 
+08:27:48.627 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- host = 54.202.231.194 
+08:27:48.627 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- resultIDField = id 
+08:27:48.627 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- defaultQuery = *:* 
+08:27:48.627 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:27:48.627 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- SIGNALS 
+08:27:48.627 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- backwardsCompatible = true 
+08:27:48.627 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- collection = att_shop 
+08:27:48.627 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- userName = admin 
+08:27:48.627 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- timeOut = 30000 
+08:27:48.628 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- highlight = true 
+08:27:48.628 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- password = password123 
+08:27:48.628 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- impersonate = true 
+08:27:48.628 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- query-profile = att_shop 
+08:27:48.628 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- name = twigkit.search.fusion.Fusion 
+08:27:48.628 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- host = 54.202.231.194 
+08:27:48.628 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- resultIDField = id 
+08:27:48.628 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- defaultQuery = *:* 
+08:27:48.628 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m - PROCESSORS 
+08:27:48.628 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   | 
+08:27:48.628 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   +-- RESPONSE 
+08:27:48.628 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:27:48.628 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- DATE-FORMAT 
+08:27:48.628 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- name = twigkit.client.processor.response.DateFormatProcessor 
+08:27:48.629 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- fields = Date 
+08:27:48.629 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- values = display 
+08:27:48.629 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m - SECURITY 
+08:27:48.629 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   |-- type = generic 
+08:27:48.629 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   |-- webservice-enabled = true 
+08:27:48.629 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   | 
+08:27:48.629 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   +-- FUSION 
+08:27:48.629 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- type = generic 
+08:27:48.629 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- webservice-enabled = true 
+08:27:48.629 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- realm-name = native 
+08:27:48.629 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- timeout = 28799 
+08:27:48.629 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m - SERVICES 
+08:27:48.629 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   | 
+08:27:48.630 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   +-- API 
+08:27:48.630 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:27:48.630 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- FUSION 
+08:27:48.630 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- password = usdfls*383s#2 
+08:27:48.630 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- protocol = http 
+08:27:48.630 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- port = 8764 
+08:27:48.630 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- host = http://ec2-34-220-70-38.us-west-2.compute.amazonaws.com 
+08:27:48.630 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- realm = native 
+08:27:48.630 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- userName = admin 
+08:27:48.630 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   | 
+08:27:48.630 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   +-- SUGGESTIONS 
+08:27:48.630 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:27:48.631 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- STATIC 
+08:27:48.631 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- numberOfSuggestions 
+08:27:48.631 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- name 
+08:27:48.631 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- host 
+08:27:48.631 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:27:48.631 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- TERMS 
+08:27:48.631 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- name = twigkit.search.solr.suggestions.SolrQueryTermsService 
+08:27:48.631 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- term-fields = title 
+08:27:48.631 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- source = platforms.fusion 
+08:27:48.631 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- title 
+08:27:48.636 [34mINFO [0;39m [36mtwigkit.InitializerModule[0;39m - Binding application-wide event bus 
+08:27:48.638 [34mINFO [0;39m [36mt.license.AbstractLicenseManager[0;39m - Initialising license expiry check monitor 
+08:27:48.640 [34mINFO [0;39m [36mtwigkit.license.PLM[0;39m - Attempting to load license from local filesystem path, file://./twigkit.lic 
+08:27:48.640 [34mINFO [0;39m [36mtwigkit.license.PLM[0;39m - Looking for license file /Users/brianland/twigkit.lic in user's home directory 
+08:27:48.643 [34mINFO [0;39m [36mtwigkit.license.PLM[0;39m - Using license file /Users/brianland/twigkit.lic 
+08:27:48.675 [34mINFO [0;39m [36mtwigkit.service.ServiceLoaderModule[0;39m - Loading and binding TwigKit Services... 
+08:27:48.702 [39mDEBUG[0;39m [36mt.ui.jsp.service.RSSSearchService[0;39m - Supported feed types: rss_0.91U, rss_1.0, rss_2.0, rss_0.93, rss_0.92, rss_0.94, rss_0.91N, rss_0.9, atom_0.3, atom_1.0 
+08:27:48.702 [34mINFO [0;39m [36mtwigkit.service.ServiceLoaderModule[0;39m - > twigkit.ui.jsp.service.RSSSearchService 
+08:27:48.706 [34mINFO [0;39m [36mtwigkit.service.ServiceLoaderModule[0;39m - > twigkit.service.StaticQuerySuggestionService 
+08:27:48.709 [34mINFO [0;39m [36mtwigkit.service.ServiceLoaderModule[0;39m - > twigkit.service.FieldSearchQuerySuggestionService 
+08:27:48.710 [34mINFO [0;39m [36mtwigkit.service.ServiceLoaderModule[0;39m - > twigkit.service.FacetSearchQuerySuggestionService 
+08:27:48.711 [34mINFO [0;39m [36mtwigkit.service.ServiceLoaderModule[0;39m - Done loading and binding TwigKit Services! 
+08:27:48.711 [34mINFO [0;39m [36mtwigkit.service.ServiceLoaderModule[0;39m - Binding TwigKit Service configurations... 
+08:27:48.713 [34mINFO [0;39m [36mtwigkit.service.ServiceLoaderModule[0;39m - Done binding TwigKit Platform configurations! 
+08:27:48.718 [34mINFO [0;39m [36mt.conf.ConfigurationProviderModule[0;39m - Binding TwigKit Platform configurations... 
+08:27:48.733 [34mINFO [0;39m [36mt.conf.ConfigurationProviderModule[0;39m - Done binding TwigKit Platform configurations! 
+08:27:48.734 [34mINFO [0;39m [36mtwigkit.Start[0;39m - Automatically loading TwigKitModules... 
+08:27:48.743 [34mINFO [0;39m [36mtwigkit.Start[0;39m - TwigKitModule Start-up order: 
+08:27:48.744 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 1. ActivityTrackerModule (HIGHEST) 
+08:27:48.744 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 2. ActivityModule (HIGHEST) 
+08:27:48.744 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 3. SecurityModule (HIGH) 
+08:27:48.744 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 4. FusionSignalsMessageProducerModule (MEDIUM) 
+08:27:48.744 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 5. FusionModule (LOWEST) 
+08:27:48.744 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 6. SolrModule (LOWEST) 
+08:27:48.744 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 7. JSPModule (LOWEST) 
+08:27:48.744 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 8. HttpModule (LOWEST) 
+08:27:48.744 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 9. CacheModule (LOWEST) 
+08:27:48.744 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 10. RecordingModule (LOWEST) 
+08:27:48.744 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 11. DriverRegistrationModule (LOWEST) 
+08:27:48.744 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 12. ConfigurationReloadModule (LOWEST) 
+08:27:48.744 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 13. LicenseRestrictionsModule (LOWEST) 
+08:27:48.744 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 14. WebServicesModule (LOWEST) 
+08:27:48.745 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 15. MediaModule (LOWEST) 
+08:27:48.745 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 16. WorkflowModule (LOWEST) 
+08:27:48.745 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 17. Wro4jModule (LOWEST) 
+08:27:48.819 [34mINFO [0;39m [36mtwigkit.activity.ActivityModule[0;39m - Activity tracker module loaded. All outbound field URLs are intercepted by default. 
+08:27:48.820 [34mINFO [0;39m [36mtwigkit.activity.ActivityModule[0;39m - Activity tracking framework module loaded. 
+08:27:48.825 [34mINFO [0;39m [36mtwigkit.security.SecurityModule[0;39m - Instantiating twigkit.security.provider.generic.RemoteUserSecurityProvider 
+08:27:48.827 [34mINFO [0;39m [36mtwigkit.security.SecurityModule[0;39m - DomainMappingFilter disabled 
+08:27:48.827 [34mINFO [0;39m [36mtwigkit.security.SecurityModule[0;39m - UserMappingFilter disabled 
+08:27:48.828 [34mINFO [0;39m [36mtwigkit.security.SecurityModule[0;39m - twigkit.security.filter.UserToGroupMappingFilter disabled 
+08:27:48.828 [34mINFO [0;39m [36mt.s.SecurityFilterExecutionModule[0;39m - Registering Authentication Filters... 
+08:27:48.829 [34mINFO [0;39m [36mt.s.SecurityFilterExecutionModule[0;39m - Registering Authorisation Filters... 
+08:27:48.831 [34mINFO [0;39m [36mtwigkit.security.SecurityModule[0;39m - Security Module loaded! 
+08:27:48.835 [34mINFO [0;39m [36mt.m.s.f.FusionSignalsMessageProducerModule[0;39m - Fusion message producer module loaded 
+08:27:48.845 [34mINFO [0;39m [36mtwigkit.search.fusion.FusionModule[0;39m - Fusion Platform Module loaded! 
+08:27:48.849 [34mINFO [0;39m [36mtwigkit.search.solr.SolrModule[0;39m - Solr Platform Module loaded! 
+08:27:48.851 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - Deploying TwigKitServlets... 
+08:27:48.860 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/services/query-suggestion-service/* -> JSONQuerySuggestionServiceServlet 
+08:27:48.862 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/services/platform/rss/* -> RSSSearchServiceServlet 
+08:27:48.864 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/services/proxy -> ProxyServlet 
+08:27:48.864 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/services/url -> RedirectServlet 
+08:27:48.865 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/services/activity/click -> ClickTrackingService 
+08:27:48.866 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/services/redirect/* -> RedirectServlet 
+08:27:48.868 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/services/migrate/* -> MigrationServlet 
+08:27:48.870 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/services/media/export/excel/* -> ExcelExportServlet 
+08:27:48.872 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/services/media/export/csv/* -> CSVExportServlet 
+08:27:48.874 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/services/media/export/offline/csv/* -> OfflineCSVExportServlet 
+08:27:48.874 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - Deploying SecureTwigKitServlets... 
+08:27:48.876 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/secure/services/url -> RedirectServlet 
+08:27:48.876 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - JSP Module loaded! 
+08:27:48.878 [34mINFO [0;39m [36mtwigkit.http.HttpModule[0;39m - CORS support enabled 
+08:27:48.879 [34mINFO [0;39m [36mtwigkit.http.HttpModule[0;39m - > cors.supportedMethods: GET, POST, DELETE, HEAD 
+08:27:48.879 [34mINFO [0;39m [36mtwigkit.http.HttpModule[0;39m - > cors.allowOrigin: * 
+08:27:48.880 [34mINFO [0;39m [36mtwigkit.http.HttpModule[0;39m - Not removing whitespace from HTML as per twigkit.properties [ui.jsp.trimWhiteSpace] 
+08:27:48.881 [34mINFO [0;39m [36mtwigkit.http.HttpModule[0;39m - Http Module loaded! 
+08:27:48.968 [34mINFO [0;39m [36mtwigkit.cache.CacheModule[0;39m - Cache Module loaded! 
+08:27:48.969 [39mDEBUG[0;39m [36mt.c.reload.ConfigurationReloadModule[0;39m - Registering application configuration with configuration watcher ... 
+08:27:48.973 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/ 
+08:27:48.974 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/activity/ 
+08:27:48.975 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/activity/tracking/ 
+08:27:48.975 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/message/ 
+08:27:48.976 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/message/service/ 
+08:27:48.976 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/platforms/ 
+08:27:48.976 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/platforms/fusion/ 
+08:27:48.977 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/processors/ 
+08:27:48.977 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/processors/response/ 
+08:27:48.977 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/security/ 
+08:27:48.978 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/services/ 
+08:27:48.978 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/services/api/ 
+08:27:48.978 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/services/suggestions/ 
+08:27:48.980 [34mINFO [0;39m [36mt.c.reload.ConfigurationReloadModule[0;39m - Configuration Reload Module loaded! 
+08:27:48.982 [34mINFO [0;39m [36mt.license.LicenseRestrictionsModule[0;39m - License Restrictions Module loaded! 
+08:27:48.994 [34mINFO [0;39m [36mtwigkit.service.WebServicesModule[0;39m - Web Services Module loaded! 
+08:27:49.266 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Supported image formats: 
+08:27:49.266 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- JPEG 2000 
+08:27:49.267 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- JPG 
+08:27:49.267 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- tiff 
+08:27:49.267 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- bmp 
+08:27:49.267 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- gif 
+08:27:49.267 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- WBMP 
+08:27:49.267 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- PNG 
+08:27:49.267 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- RAW 
+08:27:49.267 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- JPEG 
+08:27:49.267 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- btiff 
+08:27:49.267 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- PNM 
+08:27:49.267 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- tif 
+08:27:49.267 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- TIFF 
+08:27:49.267 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- wbmp 
+08:27:49.267 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- jpeg 
+08:27:49.267 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- jpg 
+08:27:49.267 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- JPEG2000 
+08:27:49.268 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- BMP 
+08:27:49.268 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- GIF 
+08:27:49.268 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- png 
+08:27:49.268 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- raw 
+08:27:49.268 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- pnm 
+08:27:49.268 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- TIF 
+08:27:49.268 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- jpeg2000 
+08:27:49.268 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- jpeg 2000 
+08:27:49.268 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- BTIFF 
+08:27:49.268 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Media Module loaded! 
+08:27:49.271 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - Binding Processor classes... 
+08:27:49.273 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.solr.processors.SolrDateRangeFacetQueries 
+08:27:49.274 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.solr.processors.SolrDateRangeFacetResponse 
+08:27:49.275 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.security.processor.AddFilterProcessor 
+08:27:49.276 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.security.processor.AddRolesFilterProcessor 
+08:27:49.276 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.security.processor.RoleLocalizer 
+08:27:49.277 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.query.AddFilterProcessor 
+08:27:49.277 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.query.CompositeFieldProcessor 
+08:27:49.278 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.query.ReplaceFilterValue 
+08:27:49.279 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.CopyFacetProcessor 
+08:27:49.280 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.CopyFieldProcessor 
+08:27:49.281 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.CreateFacetProcessor 
+08:27:49.282 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.DateFacetValueFormatter 
+08:27:49.283 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.DatePartExtractor 
+08:27:49.284 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.DateRangeFacetProcessor 
+08:27:49.285 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.FacetFilterSortByCount 
+08:27:49.301 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.FacetFilterSortByValue 
+08:27:49.302 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.FacetFilterValueMappingProcessor 
+08:27:49.303 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.FacetParameterProcessor 
+08:27:49.304 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.FacetSortProcessor 
+08:27:49.305 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.FieldDateParser 
+08:27:49.306 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.FieldToMultiValueFieldProcessor 
+08:27:49.308 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.HostNameExtractor 
+08:27:49.309 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.LinkMarkupProcessor 
+08:27:49.310 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.RegExFieldValueTaggerProcessor 
+08:27:49.310 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.RemoveFacetFiltersByRegex 
+08:27:49.311 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.RemoveFacetsProcessor 
+08:27:49.312 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.ReplaceFieldValue 
+08:27:49.313 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.ReplaceFilterValue 
+08:27:49.315 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.ResponseLoggingProcessor 
+08:27:49.316 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.ResultGroupProcessor 
+08:27:49.317 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.ShallowFacetGenerator 
+08:27:49.318 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.ShallowHierarchicalFacetProcessor 
+08:27:49.319 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.TweetMarkupProcessor 
+08:27:49.319 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.FieldValueParser 
+08:27:49.320 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.FacetSequenceHierarchy 
+08:27:49.321 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.LocaliseValues 
+08:27:49.321 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - Done binding Processor classes! 
+08:27:49.323 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - Processor Module loaded! 
+08:27:49.327 [39mDEBUG[0;39m [36mtwigkit.ui.js.wro4j.WroConfiguration[0;39m - In DEVELOPMENT mode - registering a 5 second resource watcher interval 
+08:27:49.328 [34mINFO [0;39m [36mtwigkit.ui.js.Wro4jModule[0;39m - Wro4j Module loaded! 
+08:27:49.329 [34mINFO [0;39m [36mtwigkit.Start[0;39m - All TwigKitModules loaded! 
+08:27:49.330 [34mINFO [0;39m [36mtwigkit.InitializerModule[0;39m - TwigKit Module loaded! 
+08:27:49.716 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - App Studio Guice Injector ready! 
+08:27:49.717 [34mINFO [0;39m [36mtwigkit.Start[0;39m - Notifying all modules that injector is ready 
+08:27:49.718 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -  
+08:27:49.719 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - Host: Sanket’s-MacBook-Pro 
+08:27:49.720 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -  
+08:27:49.722 [39mDEBUG[0;39m [36mt.f.api.session.FusionSessionStore[0;39m - Initialising Fusion session store. Each session will last for 28799000 milliseconds unless the session times out due to a prolonged period of inactivity. 
+08:27:49.733 [1;31mERROR[0;39m [36mt.m.s.f.FusionSignalsMessageProducer[0;39m - Unable to construct a valid URL to the Signals API: {} 
+java.lang.IllegalArgumentException: The Fusion Signals configuration is missing a 'collection' parameter - unable to construct a valid URL to the Signals API
+	at twigkit.message.service.fusion.util.SignalsApiRequestBuilder.getExtension(SignalsApiRequestBuilder.java:33) ~[twigkit.message.service.fusion.producer-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at twigkit.fusion.api.FusionWebserviceRequestBuilder.getURLPath(FusionWebserviceRequestBuilder.java:65) ~[twigkit.fusion.api-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at twigkit.fusion.api.FusionWebserviceRequestBuilder.build(FusionWebserviceRequestBuilder.java:60) ~[twigkit.fusion.api-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at twigkit.message.service.fusion.FusionSignalsMessageProducer.getSignalsUrl(FusionSignalsMessageProducer.java:216) [twigkit.message.service.fusion.producer-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at twigkit.message.service.fusion.FusionSignalsMessageProducer.configure(FusionSignalsMessageProducer.java:126) [twigkit.message.service.fusion.producer-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at twigkit.message.service.fusion.FusionSignalsMessageProducer.<init>(FusionSignalsMessageProducer.java:107) [twigkit.message.service.fusion.producer-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at twigkit.message.service.fusion.FusionSignalsMessageProducer$$FastClassByGuice$$dad42023.newInstance(<generated>) [guice-4.0.jar:4.0.0-SNAPSHOT]
+	at com.google.inject.internal.cglib.reflect.$FastConstructor.newInstance(FastConstructor.java:40) [guice-4.0.jar:na]
+	at com.google.inject.internal.DefaultConstructionProxyFactory$1.newInstance(DefaultConstructionProxyFactory.java:61) [guice-4.0.jar:na]
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:105) [guice-4.0.jar:na]
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:85) [guice-4.0.jar:na]
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267) [guice-4.0.jar:na]
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46) [guice-4.0.jar:na]
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103) [guice-4.0.jar:na]
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40) [guice-4.0.jar:na]
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:145) [guice-4.0.jar:na]
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41) [guice-4.0.jar:na]
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56) [guice-4.0.jar:na]
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016) [guice-4.0.jar:na]
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092) [guice-4.0.jar:na]
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012) [guice-4.0.jar:na]
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1051) [guice-4.0.jar:na]
+	at twigkit.activity.ActivityTrackerModule.afterInjectorInitialised(ActivityTrackerModule.java:104) [twigkit.activity.tracker-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at twigkit.Start$2.injectorReady(Start.java:85) [twigkit.commons-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_152]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_152]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_152]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_152]
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74) [guava-18.0.jar:na]
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47) [guava-18.0.jar:na]
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322) [guava-18.0.jar:na]
+	at com.google.common.eventbus.AsyncEventBus.access$001(AsyncEventBus.java:34) [guava-18.0.jar:na]
+	at com.google.common.eventbus.AsyncEventBus$1.run(AsyncEventBus.java:117) [guava-18.0.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_152]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_152]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_152]
+08:27:49.737 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - License VALID until Wed Nov 14 23:00:00 CST 2018 
+08:27:49.737 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - Licensed host: * 
+08:27:49.737 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - Licensed email address: license@lucidworks.com 
+08:27:49.738 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - Licensed modules: 
+08:27:49.740 [31mWARN [0;39m [36mt.conf.AbstractConfigurationProvider[0;39m - Class not found for [activity.signal.processing.click] 
+08:27:49.740 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > fusion(scope: unlimited) 
+08:27:49.740 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > environment(scope: [Ljava.lang.String;@5ca4c88a) 
+08:27:49.741 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > fusion.connectors(scope: unlimited) 
+08:27:49.741 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > fusion.server(scope: unlimited) 
+08:27:49.741 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > webservices(scope: unlimited) 
+08:27:49.741 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > security(scope: unlimited) 
+08:27:49.741 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > workflow(scope: unlimited) 
+08:27:49.741 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > solr(scope: unlimited) 
+08:27:49.741 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > organisation(scope: [Ljava.lang.String;@1791e231) 
+08:27:49.741 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > media(scope: unlimited) 
+08:27:49.741 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > user(scope: [Ljava.lang.String;@55397d15) 
+08:27:49.741 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -  
+08:27:49.745 [31mWARN [0;39m [36mt.conf.AbstractConfigurationProvider[0;39m - Class not found for [activity.signal.processing.request] 
+08:27:49.747 [31mWARN [0;39m [36mt.conf.AbstractConfigurationProvider[0;39m - Class not found for [activity.signal.processing.response] 
+08:27:49.772 [31mWARN [0;39m [36mt.conf.AbstractConfigurationProvider[0;39m - Class not found for [activity.signal.processing.login] 
+08:27:49.773 [34mINFO [0;39m [36mt.s.SecurityFilterExecutionModule[0;39m - Initialising SecurityFilters... 
+08:27:49.774 [34mINFO [0;39m [36mt.security.filter.RemoteUserFilter[0;39m - Using RemoteUserFilter to add Users (from HttpServletRequest RemoteUser attribute) to SecurityContext 
+08:27:49.774 [34mINFO [0;39m [36mt.s.SecurityFilterExecutionModule[0;39m - > AuthenticationFilter [RemoteUserFilter] initialised! 
+08:27:49.896 [39mDEBUG[0;39m [36mtwigkit.ui.js.wro4j.WroConfiguration[0;39m - In DEVELOPMENT mode - registering a 5 second resource watcher interval 
+08:27:50.154 [31mWARN [0;39m [36mt.m.servlet.OfflineCSVExportServlet[0;39m - No configuration found for offline export under services/media/export/offline. Default settings used. 
+08:27:50.155 [34mINFO [0;39m [36mt.m.servlet.OfflineCSVExportServlet[0;39m - Initialised offline export servlet with the following properties: 
+08:27:50.156 [34mINFO [0;39m [36mt.m.servlet.OfflineCSVExportServlet[0;39m - 	- folder: offline-exports 
+08:27:50.156 [34mINFO [0;39m [36mt.m.servlet.OfflineCSVExportServlet[0;39m - 	- compress: false 
+08:27:50.156 [34mINFO [0;39m [36mt.m.servlet.OfflineCSVExportServlet[0;39m - 	- temp folder: /var/folders/3h/7jwpt2gd69n0r04xgbt7r9zr0000gn/T 
+08:27:50.156 [34mINFO [0;39m [36mt.m.servlet.OfflineCSVExportServlet[0;39m - 	- redirect path: /export-in-progress/ 
+08:27:50.874 [34mINFO [0;39m [36mtwigkit.frame.CachedImageIOService[0;39m - CachedImageIOService offline path: /tmp/twigkit/offline 
+08:27:50.879 [39mDEBUG[0;39m [36mtwigkit.frame.CachedImageIOService[0;39m - Creating cache from defaults! 
+08:27:51.474 [34mINFO [0;39m [36mtwigkit.frame.CachedImageIOService[0;39m - CachedImageIOService offline path: /tmp/twigkit/offline 
+08:28:48.644 [39mDEBUG[0;39m [36mt.license.LicenseMonitor$ExpiryCheck[0;39m - Scheduling new license expiry notification with MONTHLY frequency 
+08:28:48.648 [31mWARN [0;39m [36mtwigkit.ApplicationAlertSubscriber[0;39m - The license for Twigkit expires on: 14 Nov 2018 23:00:00 
+08:30:08.803 [39mDEBUG[0;39m [36mt.u.j.w.r.RuntimeWroManagerFactory[0;39m - Attempting to read wro.xml from /WEB-INF/ 
+08:30:18.386 [1;31mERROR[0;39m [36mro.isdc.wro.http.WroFilter[0;39m - Exception occured 
+org.eclipse.jetty.io.EofException: null
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:197) ~[na:na]
+	at org.eclipse.jetty.io.WriteFlusher.flush(WriteFlusher.java:419) ~[na:na]
+	at org.eclipse.jetty.io.WriteFlusher.write(WriteFlusher.java:313) ~[na:na]
+	at org.eclipse.jetty.io.AbstractEndPoint.write(AbstractEndPoint.java:141) ~[na:na]
+	at org.eclipse.jetty.server.HttpConnection$SendCallback.process(HttpConnection.java:738) ~[na:na]
+	at org.eclipse.jetty.util.IteratingCallback.processing(IteratingCallback.java:241) ~[na:na]
+	at org.eclipse.jetty.util.IteratingCallback.iterate(IteratingCallback.java:224) ~[na:na]
+	at org.eclipse.jetty.server.HttpConnection.send(HttpConnection.java:512) [jetty-server-9.3.8.v20160314.jar:9.3.8.v20160314]
+	at org.eclipse.jetty.server.HttpChannel.sendResponse(HttpChannel.java:673) [jetty-server-9.3.8.v20160314.jar:9.3.8.v20160314]
+	at org.eclipse.jetty.server.HttpChannel.write(HttpChannel.java:722) [jetty-server-9.3.8.v20160314.jar:9.3.8.v20160314]
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:179) ~[na:na]
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:163) ~[na:na]
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:436) ~[na:na]
+	at java.io.OutputStream.write(OutputStream.java:75) ~[na:1.8.0_152]
+	at org.apache.commons.io.IOUtils.write(IOUtils.java:1250) ~[commons-io-2.4.jar:2.4]
+	at ro.isdc.wro.manager.ResourceBundleProcessor.serveProcessedBundle(ResourceBundleProcessor.java:94) ~[wro4j-core-1.8.0.jar:1.8.0]
+	at ro.isdc.wro.manager.WroManager.process(WroManager.java:159) ~[wro4j-core-1.8.0.jar:1.8.0]
+	at ro.isdc.wro.http.WroFilter.processRequest(WroFilter.java:339) ~[wro4j-core-1.8.0.jar:1.8.0]
+	at ro.isdc.wro.http.WroFilter.doFilter(WroFilter.java:294) ~[wro4j-core-1.8.0.jar:1.8.0]
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:82) [guice-servlet-4.0.jar:na]
+	at twigkit.license.LicenseRestrictionFilter.doFilter(LicenseRestrictionFilter.java:69) [twigkit.commons-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:82) [guice-servlet-4.0.jar:na]
+	at com.thetransactioncompany.cors.CORSFilter.doFilter(CORSFilter.java:168) [cors-filter-1.7.jar:1.7]
+	at com.thetransactioncompany.cors.CORSFilter.doFilter(CORSFilter.java:233) [cors-filter-1.7.jar:1.7]
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:82) [guice-servlet-4.0.jar:na]
+	at twigkit.http.filter.TwigkitContextFilter.doFilter(TwigkitContextFilter.java:40) [twigkit.http-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:82) [guice-servlet-4.0.jar:na]
+	at twigkit.activity.filter.TransitionFilter.doFilter(TransitionFilter.java:66) [twigkit.activity.tracker-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:82) [guice-servlet-4.0.jar:na]
+	at twigkit.activity.filter.UserAgentFilter.doFilter(UserAgentFilter.java:93) [twigkit.activity.tracker-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:82) [guice-servlet-4.0.jar:na]
+	at twigkit.activity.filter.SessionFilter.doFilter(SessionFilter.java:91) [twigkit.activity.tracker-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:82) [guice-servlet-4.0.jar:na]
+	at com.google.inject.servlet.ManagedFilterPipeline.dispatch(ManagedFilterPipeline.java:119) [guice-servlet-4.0.jar:na]
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:133) [guice-servlet-4.0.jar:na]
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:130) [guice-servlet-4.0.jar:na]
+	at com.google.inject.servlet.GuiceFilter$Context.call(GuiceFilter.java:203) [guice-servlet-4.0.jar:na]
+	at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:130) [guice-servlet-4.0.jar:na]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668) [jetty-servlet-9.3.8.v20160314.jar:9.3.8.v20160314]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581) [jetty-servlet-9.3.8.v20160314.jar:9.3.8.v20160314]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) [jetty-server-9.3.8.v20160314.jar:9.3.8.v20160314]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548) [jetty-security-9.3.8.v20160314.jar:9.3.8.v20160314]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226) [jetty-server-9.3.8.v20160314.jar:9.3.8.v20160314]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160) [jetty-server-9.3.8.v20160314.jar:9.3.8.v20160314]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511) [jetty-servlet-9.3.8.v20160314.jar:9.3.8.v20160314]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185) [jetty-server-9.3.8.v20160314.jar:9.3.8.v20160314]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092) [jetty-server-9.3.8.v20160314.jar:9.3.8.v20160314]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) [jetty-server-9.3.8.v20160314.jar:9.3.8.v20160314]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213) [jetty-server-9.3.8.v20160314.jar:9.3.8.v20160314]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119) [jetty-server-9.3.8.v20160314.jar:9.3.8.v20160314]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134) [jetty-server-9.3.8.v20160314.jar:9.3.8.v20160314]
+	at org.eclipse.jetty.server.Server.handle(Server.java:518) [jetty-server-9.3.8.v20160314.jar:9.3.8.v20160314]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308) [jetty-server-9.3.8.v20160314.jar:9.3.8.v20160314]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244) [jetty-server-9.3.8.v20160314.jar:9.3.8.v20160314]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273) [jetty-io-9.3.8.v20160314.jar:9.3.8.v20160314]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95) [jetty-io-9.3.8.v20160314.jar:9.3.8.v20160314]
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93) [jetty-io-9.3.8.v20160314.jar:9.3.8.v20160314]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246) [jetty-util-9.3.8.v20160314.jar:9.3.8.v20160314]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156) [jetty-util-9.3.8.v20160314.jar:9.3.8.v20160314]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654) [jetty-util-9.3.8.v20160314.jar:9.3.8.v20160314]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572) [jetty-util-9.3.8.v20160314.jar:9.3.8.v20160314]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_152]
+Caused by: java.io.IOException: Broken pipe
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method) ~[na:1.8.0_152]
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:47) ~[na:1.8.0_152]
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93) ~[na:1.8.0_152]
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65) ~[na:1.8.0_152]
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471) ~[na:1.8.0_152]
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:175) ~[na:na]
+	... 61 common frames omitted
+08:30:18.704 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrQueryAdapter[0;39m - Mapped Solr Query [start=0&rows=10&hl=true&q=*:*&facet=true&fl=*,score&fq={!tag%3DtaxoStyle_s}taxoStyle_s:(Smartphones)&username=anonymous&session=32616a99-99c2-4e41-a031-a067d04ce1c5&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR&userId=zx4l2c] 
+08:30:18.704 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrQueryAdapter[0;39m - Mapped Solr Query [start=0&rows=10&hl=true&q=*:*&facet=true&fl=*,score&fq={!tag%3DtaxoStyle_s}taxoStyle_s:(Smartphones)&username=anonymous&session=32616a99-99c2-4e41-a031-a067d04ce1c5&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR&userId=zx4l2c] 
+08:30:18.705 [39mDEBUG[0;39m [36mtwigkit.search.solr.HttpSolrPlatform[0;39m - Returning HTTP client for http://54.202.231.194:8764/api/apollo/query/homepage-banner-shop 
+08:30:18.705 [39mDEBUG[0;39m [36mtwigkit.search.solr.HttpSolrPlatform[0;39m - Returning HTTP client for http://54.202.231.194:8764/api/apollo/query/homepage-banner-shop 
+08:30:18.826 [39mDEBUG[0;39m [36mtwigkit.search.solr.HttpSolrPlatform[0;39m - Using basic HTTP authentication for Solr server org.apache.solr.client.solrj.impl.HttpSolrClient@6e3fa540 
+08:30:18.952 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrPlatform[0;39m - Error when searching Solr with start=0&rows=10&hl=true&q=*:*&facet=true&fl=*,score&fq={!tag%3DtaxoStyle_s}taxoStyle_s:(Smartphones)&username=anonymous&session=32616a99-99c2-4e41-a031-a067d04ce1c5&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR&userId=zx4l2c 
+08:30:18.952 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrPlatform[0;39m - Error when searching Solr with start=0&rows=10&hl=true&q=*:*&facet=true&fl=*,score&fq={!tag%3DtaxoStyle_s}taxoStyle_s:(Smartphones)&username=anonymous&session=32616a99-99c2-4e41-a031-a067d04ce1c5&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR&userId=zx4l2c 
+08:30:33.814 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrQueryAdapter[0;39m - Mapped Solr Query [start=0&rows=10&hl=true&q=*:*&facet=true&fl=*,score&fq={!tag%3DtaxoStyle_s}taxoStyle_s:(Smartphones)&username=anonymous&session=32616a99-99c2-4e41-a031-a067d04ce1c5&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR&userId=qg9ke] 
+08:30:33.816 [39mDEBUG[0;39m [36mtwigkit.search.solr.HttpSolrPlatform[0;39m - Returning HTTP client for http://54.202.231.194:8764/api/apollo/query/homepage-banner-shop 
+08:30:33.817 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrQueryAdapter[0;39m - Mapped Solr Query [start=0&rows=10&hl=true&q=*:*&facet=true&fl=*,score&fq={!tag%3DtaxoStyle_s}taxoStyle_s:(Smartphones)&username=anonymous&session=32616a99-99c2-4e41-a031-a067d04ce1c5&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR&userId=qg9ke] 
+08:30:33.817 [39mDEBUG[0;39m [36mtwigkit.search.solr.HttpSolrPlatform[0;39m - Returning HTTP client for http://54.202.231.194:8764/api/apollo/query/homepage-banner-shop 
+08:30:33.855 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrPlatform[0;39m - Error when searching Solr with start=0&rows=10&hl=true&q=*:*&facet=true&fl=*,score&fq={!tag%3DtaxoStyle_s}taxoStyle_s:(Smartphones)&username=anonymous&session=32616a99-99c2-4e41-a031-a067d04ce1c5&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR&userId=qg9ke 
+08:30:33.855 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrPlatform[0;39m - Error when searching Solr with start=0&rows=10&hl=true&q=*:*&facet=true&fl=*,score&fq={!tag%3DtaxoStyle_s}taxoStyle_s:(Smartphones)&username=anonymous&session=32616a99-99c2-4e41-a031-a067d04ce1c5&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR&userId=qg9ke 
+08:30:58.973 [39mDEBUG[0;39m [36mt.c.e.LocalDevelopmentConfigurationChangedSubscriber[0;39m - Received event twigkit.conf.event.ConfigurationModified@5ad89c37 
+08:30:58.974 [39mDEBUG[0;39m [36mt.c.e.LocalDevelopmentConfigurationChangedSubscriber[0;39m - Path to source config : /Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/platforms/fusion/fusion.conf 
+08:30:58.974 [39mDEBUG[0;39m [36mt.c.e.LocalDevelopmentConfigurationChangedSubscriber[0;39m - Path to target config : /Users/brianland/Documents/git/att_shop/ui/target/classes/conf/platforms/fusion/fusion.conf 
+08:30:58.974 [39mDEBUG[0;39m [36mt.c.e.LocalDevelopmentConfigurationChangedSubscriber[0;39m - Configuration change event received: class twigkit.conf.event.ConfigurationModified on /Users/brianland/Documents/git/att_shop/ui/target/classes/conf/platforms/fusion/fusion.conf 
+08:30:58.980 [39mDEBUG[0;39m [36mt.c.e.LocalDevelopmentConfigurationChangedSubscriber[0;39m - Updated /Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/platforms/fusion/fusion.conf 
+08:30:58.998 [39mDEBUG[0;39m [36mt.c.e.AbstractConfigurationChangedSubscriber[0;39m - Reloading configuration tree. 
+08:30:59.008 [39mDEBUG[0;39m [36mt.conf.AbstractConfigurationProvider[0;39m - Fig hierarchy reloaded class twigkit.conf.event.FigReloadedEvent - resetting provider registry for class twigkit.conf.ConfiguredServiceProvider 
+08:30:59.008 [39mDEBUG[0;39m [36mt.c.e.AbstractConfigurationChangedSubscriber[0;39m - Configuration tree successfully reloaded. 
+08:30:59.008 [39mDEBUG[0;39m [36mt.conf.AbstractConfigurationProvider[0;39m - Fig hierarchy reloaded class twigkit.conf.event.FigReloadedEvent - resetting provider registry for class twigkit.platform.conf.ConfiguredWorkflowPlatformProvider 
+08:30:59.008 [39mDEBUG[0;39m [36mt.m.s.f.FusionSignalsMessageProducer[0;39m - Fig hierarchy reloaded - resetting Fusion message producer settings 
+08:30:59.009 [1;31mERROR[0;39m [36mt.m.s.f.FusionSignalsMessageProducer[0;39m - Unable to construct a valid URL to the Signals API: {} 
+java.lang.IllegalArgumentException: The Fusion Signals configuration is missing a 'collection' parameter - unable to construct a valid URL to the Signals API
+	at twigkit.message.service.fusion.util.SignalsApiRequestBuilder.getExtension(SignalsApiRequestBuilder.java:33) ~[twigkit.message.service.fusion.producer-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at twigkit.fusion.api.FusionWebserviceRequestBuilder.getURLPath(FusionWebserviceRequestBuilder.java:65) ~[twigkit.fusion.api-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at twigkit.fusion.api.FusionWebserviceRequestBuilder.build(FusionWebserviceRequestBuilder.java:60) ~[twigkit.fusion.api-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at twigkit.message.service.fusion.FusionSignalsMessageProducer.getSignalsUrl(FusionSignalsMessageProducer.java:216) [twigkit.message.service.fusion.producer-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at twigkit.message.service.fusion.FusionSignalsMessageProducer.configure(FusionSignalsMessageProducer.java:126) [twigkit.message.service.fusion.producer-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at twigkit.message.service.fusion.FusionSignalsMessageProducer.configurationChanged(FusionSignalsMessageProducer.java:225) [twigkit.message.service.fusion.producer-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_152]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_152]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_152]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_152]
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74) [guava-18.0.jar:na]
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47) [guava-18.0.jar:na]
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322) [guava-18.0.jar:na]
+	at com.google.common.eventbus.AsyncEventBus.access$001(AsyncEventBus.java:34) [guava-18.0.jar:na]
+	at com.google.common.eventbus.AsyncEventBus$1.run(AsyncEventBus.java:117) [guava-18.0.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_152]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_152]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_152]
+08:31:02.968 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - Shutting down... 
+08:31:02.969 [39mDEBUG[0;39m [36mtwigkit.cache.CacheModule[0;39m - Shutting down Cachalot cache manager 
+08:31:02.975 [39mDEBUG[0;39m [36mt.c.platform.PlatformCacheProvider[0;39m - Creating new PlatformCacheProvider 
+08:31:02.978 [34mINFO [0;39m [36mt.driver.DriverRegistrationModule[0;39m - De-registering JDBC driver org.apache.solr.client.solrj.io.sql.DriverImpl@2dec3e6a 
+08:31:02.979 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Closing configuration watcher service. 
+08:31:02.979 [34mINFO [0;39m [36mtwigkit.frame.CachedImageIOService[0;39m - CachedImageIOService offline path: /tmp/twigkit/offline 
+08:31:02.982 [39mDEBUG[0;39m [36mtwigkit.frame.CachedImageIOService[0;39m - Shutting down cache manager for cache frame-cache 
+08:31:02.985 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.sun.media.imageioimpl.plugins.jpeg2000.J2KImageReaderSpi 
+08:31:02.985 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.twelvemonkeys.imageio.plugins.jpeg.JPEGImageReaderSpi 
+08:31:02.985 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.sun.media.imageioimpl.plugins.pnm.PNMImageReaderSpi 
+08:31:02.985 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.sun.media.imageioimpl.plugins.tiff.TIFFImageReaderSpi 
+08:31:02.985 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.sun.media.imageioimpl.plugins.bmp.BMPImageReaderSpi 
+08:31:02.985 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class it.geosolutions.imageioimpl.plugins.tiff.TIFFImageReaderSpi 
+08:31:02.985 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.sun.media.imageioimpl.plugins.wbmp.WBMPImageReaderSpi 
+08:31:02.985 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.sun.media.imageioimpl.plugins.raw.RawImageReaderSpi 
+08:31:02.985 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Media Module shutdown complete. 
+08:31:02.985 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.sun.media.imageioimpl.plugins.gif.GIFImageWriterSpi 
+08:31:02.985 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class it.geosolutions.imageioimpl.plugins.tiff.TIFFImageWriterSpi 
+08:31:02.985 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.sun.media.imageioimpl.plugins.jpeg2000.J2KImageWriterSpi 
+08:31:02.985 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.sun.media.imageioimpl.plugins.wbmp.WBMPImageWriterSpi 
+08:31:02.985 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.sun.media.imageioimpl.plugins.raw.RawImageWriterSpi 
+08:31:02.985 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.sun.media.imageioimpl.plugins.bmp.BMPImageWriterSpi 
+08:31:02.985 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.sun.media.imageioimpl.plugins.pnm.PNMImageWriterSpi 
+08:31:02.985 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.twelvemonkeys.imageio.plugins.jpeg.JPEGImageWriterSpi 
+08:31:02.985 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.sun.media.imageioimpl.plugins.tiff.TIFFImageWriterSpi 
+08:31:02.985 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Media Module shutdown complete. 
+08:31:02.985 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Media Module shutdown complete. 
+08:31:02.986 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.sun.media.imageioimpl.stream.ChannelImageInputStreamSpi 
+08:31:02.986 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Media Module shutdown complete. 
+08:31:02.986 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Unregistered locally installed provider: class com.sun.media.imageioimpl.stream.ChannelImageOutputStreamSpi 
+08:31:02.986 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Media Module shutdown complete. 
+08:31:02.986 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - Shutting down... 
+08:31:29.468 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -  
+08:31:29.470 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -                                                              
+08:31:29.470 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -  ████╗ █████╗ █████╗   █████╗██████╗██╗ ██╗█████╗ ██╗ ████╗  
+08:31:29.471 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - ██╔═██╗██╔═██╗██╔═██╗  ██╔══╝╚═██╔═╝██║ ██║██╔═██╗██║██╔═██╗ 
+08:31:29.471 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - ██████║█████╔╝█████╔╝  █████╗  ██║  ██║ ██║██║ ██║██║██║ ██║ 
+08:31:29.471 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - ██╔═██║██╔══╝ ██╔══╝   ╚══██║  ██║  ██║ ██║██║ ██║██║██║ ██║ 
+08:31:29.471 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - ██║ ██║██║    ██║      █████║  ██║  ╚████╔╝█████╔╝██║╚████╔╝ 
+08:31:29.471 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - ╚═╝ ╚═╝╚═╝    ╚═╝      ╚════╝  ╚═╝   ╚═══╝ ╚════╝ ╚═╝ ╚═══╝  
+08:31:29.471 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -                                                              
+08:31:29.471 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -                     Lovingly crafted in 
+08:31:29.471 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -                          Cambridge 
+08:31:29.471 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -  
+08:31:29.471 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -  
+08:31:29.475 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -      App Studio is starting in DEVELOPMENT mode... 
+08:31:29.476 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -  
+08:31:29.476 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -  
+08:31:29.476 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - Built with Appkit version 4.0.0-SNAPSHOT 
+08:31:29.477 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -  
+08:31:29.615 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m - CORS 
+08:31:29.616 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   |-- cors.supportedMethods = GET, POST, DELETE, HEAD 
+08:31:29.616 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   |-- cors.allowOrigin = * 
+08:31:29.616 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m - TWIGKIT 
+08:31:29.616 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   |-- ui.trim-white-space = false 
+08:31:29.616 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   |-- license-file = file://./twigkit.lic 
+08:31:29.617 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m - ACTIVITY 
+08:31:29.617 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   | 
+08:31:29.617 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   +-- TRACKING 
+08:31:29.617 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:31:29.617 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- TRACKER 
+08:31:29.617 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- events = click, query, request, response, login, annotation # or any subset thereof 
+08:31:29.617 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m - MESSAGE 
+08:31:29.617 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   | 
+08:31:29.617 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   +-- SERVICE 
+08:31:29.618 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:31:29.618 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- FUSION 
+08:31:29.618 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- async = false 
+08:31:29.618 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- signals-endpoint = http://ec2-34-220-70-38.us-west-2.compute.amazonaws.com/:8764/api/apollo/signals/att_test 
+08:31:29.618 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- password = usdfls*383s#2 
+08:31:29.618 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- impersonate = true 
+08:31:29.618 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- //Configre = the admin account that has write access to the signals API. 
+08:31:29.618 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- commit = true 
+08:31:29.618 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- signals-index-pipeline = _signals_ingest 
+08:31:29.618 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- userName = admin 
+08:31:29.618 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- //Configure = your indexing pipeline for signals 
+08:31:29.619 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m - PLATFORMS 
+08:31:29.619 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   | 
+08:31:29.620 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   +-- FUSION 
+08:31:29.620 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- backwardsCompatible = true 
+08:31:29.620 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- collection = att_shop 
+08:31:29.621 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- userName = admin 
+08:31:29.621 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- timeOut = 30000 
+08:31:29.621 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- highlight = true 
+08:31:29.621 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- password = password123 
+08:31:29.621 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- impersonate = true 
+08:31:29.621 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- query-profile = att_shop 
+08:31:29.621 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- name = twigkit.search.fusion.Fusion 
+08:31:29.621 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- host = 54.190.188.112 
+08:31:29.621 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- resultIDField = id 
+08:31:29.621 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- defaultQuery = *:* 
+08:31:29.621 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:31:29.621 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- BANNER 
+08:31:29.622 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- backwardsCompatible = true 
+08:31:29.622 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- collection = att_shop 
+08:31:29.622 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- userName = admin 
+08:31:29.622 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- timeOut = 30000 
+08:31:29.622 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- highlight = true 
+08:31:29.622 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- password = password123 
+08:31:29.622 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- impersonate = true 
+08:31:29.622 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- query-profile = homepage-banner-shop 
+08:31:29.622 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- name = twigkit.search.fusion.Fusion 
+08:31:29.622 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- host = 54.190.188.112 
+08:31:29.622 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- resultIDField = id 
+08:31:29.623 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- defaultQuery = *:* 
+08:31:29.623 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:31:29.623 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- ITEM_RECS 
+08:31:29.623 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- backwardsCompatible = true 
+08:31:29.623 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- collection = att_shop 
+08:31:29.623 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- userName = admin 
+08:31:29.623 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- timeOut = 30000 
+08:31:29.623 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- highlight = true 
+08:31:29.623 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- password = password123 
+08:31:29.623 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- impersonate = true 
+08:31:29.623 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- query-profile = att_item_recommendations 
+08:31:29.623 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- name = twigkit.search.fusion.Fusion 
+08:31:29.623 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- host = 54.190.188.112 
+08:31:29.623 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- resultIDField = id 
+08:31:29.624 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- defaultQuery = *:* 
+08:31:29.624 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:31:29.624 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- LOGS 
+08:31:29.624 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- backwardsCompatible = true 
+08:31:29.624 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- collection = att_shop 
+08:31:29.624 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- userName = admin 
+08:31:29.624 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- timeOut = 30000 
+08:31:29.624 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- highlight = true 
+08:31:29.624 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- password = password123 
+08:31:29.624 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- impersonate = true 
+08:31:29.624 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- query-profile = att_shop 
+08:31:29.624 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- name = twigkit.search.fusion.Fusion 
+08:31:29.624 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- host = 54.190.188.112 
+08:31:29.624 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- resultIDField = id 
+08:31:29.625 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- defaultQuery = *:* 
+08:31:29.625 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:31:29.625 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- PEOPLE 
+08:31:29.625 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- backwardsCompatible = true 
+08:31:29.625 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- collection = att_shop 
+08:31:29.625 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- userName = admin 
+08:31:29.625 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- timeOut = 30000 
+08:31:29.625 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- highlight = true 
+08:31:29.625 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- password = password123 
+08:31:29.625 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- impersonate = true 
+08:31:29.625 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- query-profile = att_shop 
+08:31:29.625 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- name = twigkit.search.fusion.Fusion 
+08:31:29.625 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- host = 54.190.188.112 
+08:31:29.625 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- resultIDField = id 
+08:31:29.626 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- defaultQuery = *:* 
+08:31:29.626 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:31:29.626 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- SIGNALS 
+08:31:29.626 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- backwardsCompatible = true 
+08:31:29.626 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- collection = att_shop 
+08:31:29.626 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- userName = admin 
+08:31:29.626 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- timeOut = 30000 
+08:31:29.626 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- highlight = true 
+08:31:29.626 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- password = password123 
+08:31:29.626 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- impersonate = true 
+08:31:29.626 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- query-profile = att_shop 
+08:31:29.626 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- name = twigkit.search.fusion.Fusion 
+08:31:29.626 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- host = 54.190.188.112 
+08:31:29.627 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- resultIDField = id 
+08:31:29.627 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- defaultQuery = *:* 
+08:31:29.627 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m - PROCESSORS 
+08:31:29.627 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   | 
+08:31:29.627 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   +-- RESPONSE 
+08:31:29.627 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:31:29.627 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- DATE-FORMAT 
+08:31:29.627 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- name = twigkit.client.processor.response.DateFormatProcessor 
+08:31:29.627 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- fields = Date 
+08:31:29.627 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- values = display 
+08:31:29.627 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m - SECURITY 
+08:31:29.627 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   |-- type = generic 
+08:31:29.628 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   |-- webservice-enabled = true 
+08:31:29.628 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   | 
+08:31:29.628 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   +-- FUSION 
+08:31:29.628 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- type = generic 
+08:31:29.628 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- webservice-enabled = true 
+08:31:29.628 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- realm-name = native 
+08:31:29.628 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         |-- timeout = 28799 
+08:31:29.628 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m - SERVICES 
+08:31:29.628 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   | 
+08:31:29.628 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   +-- API 
+08:31:29.628 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:31:29.628 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- FUSION 
+08:31:29.628 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- password = usdfls*383s#2 
+08:31:29.628 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- protocol = http 
+08:31:29.628 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- port = 8764 
+08:31:29.629 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- host = http://ec2-34-220-70-38.us-west-2.compute.amazonaws.com 
+08:31:29.629 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- realm = native 
+08:31:29.629 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- userName = admin 
+08:31:29.629 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   | 
+08:31:29.629 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -   +-- SUGGESTIONS 
+08:31:29.629 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:31:29.629 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- STATIC 
+08:31:29.629 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- numberOfSuggestions 
+08:31:29.629 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- name 
+08:31:29.629 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- host 
+08:31:29.629 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         | 
+08:31:29.629 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -         +-- TERMS 
+08:31:29.629 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- name = twigkit.search.solr.suggestions.SolrQueryTermsService 
+08:31:29.629 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- term-fields = title 
+08:31:29.629 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- source = platforms.fusion 
+08:31:29.630 [34mINFO [0;39m [36mtwigkit.fig.visitor.ConfigLogger[0;39m -               |-- title 
+08:31:29.636 [34mINFO [0;39m [36mtwigkit.InitializerModule[0;39m - Binding application-wide event bus 
+08:31:29.638 [34mINFO [0;39m [36mt.license.AbstractLicenseManager[0;39m - Initialising license expiry check monitor 
+08:31:29.640 [34mINFO [0;39m [36mtwigkit.license.PLM[0;39m - Attempting to load license from local filesystem path, file://./twigkit.lic 
+08:31:29.640 [34mINFO [0;39m [36mtwigkit.license.PLM[0;39m - Looking for license file /Users/brianland/twigkit.lic in user's home directory 
+08:31:29.643 [34mINFO [0;39m [36mtwigkit.license.PLM[0;39m - Using license file /Users/brianland/twigkit.lic 
+08:31:29.679 [34mINFO [0;39m [36mtwigkit.service.ServiceLoaderModule[0;39m - Loading and binding TwigKit Services... 
+08:31:29.704 [39mDEBUG[0;39m [36mt.ui.jsp.service.RSSSearchService[0;39m - Supported feed types: rss_0.91U, rss_1.0, rss_2.0, rss_0.93, rss_0.92, rss_0.94, rss_0.91N, rss_0.9, atom_0.3, atom_1.0 
+08:31:29.704 [34mINFO [0;39m [36mtwigkit.service.ServiceLoaderModule[0;39m - > twigkit.ui.jsp.service.RSSSearchService 
+08:31:29.706 [34mINFO [0;39m [36mtwigkit.service.ServiceLoaderModule[0;39m - > twigkit.service.StaticQuerySuggestionService 
+08:31:29.707 [34mINFO [0;39m [36mtwigkit.service.ServiceLoaderModule[0;39m - > twigkit.service.FieldSearchQuerySuggestionService 
+08:31:29.708 [34mINFO [0;39m [36mtwigkit.service.ServiceLoaderModule[0;39m - > twigkit.service.FacetSearchQuerySuggestionService 
+08:31:29.708 [34mINFO [0;39m [36mtwigkit.service.ServiceLoaderModule[0;39m - Done loading and binding TwigKit Services! 
+08:31:29.708 [34mINFO [0;39m [36mtwigkit.service.ServiceLoaderModule[0;39m - Binding TwigKit Service configurations... 
+08:31:29.709 [34mINFO [0;39m [36mtwigkit.service.ServiceLoaderModule[0;39m - Done binding TwigKit Platform configurations! 
+08:31:29.713 [34mINFO [0;39m [36mt.conf.ConfigurationProviderModule[0;39m - Binding TwigKit Platform configurations... 
+08:31:29.733 [34mINFO [0;39m [36mt.conf.ConfigurationProviderModule[0;39m - Done binding TwigKit Platform configurations! 
+08:31:29.734 [34mINFO [0;39m [36mtwigkit.Start[0;39m - Automatically loading TwigKitModules... 
+08:31:29.745 [34mINFO [0;39m [36mtwigkit.Start[0;39m - TwigKitModule Start-up order: 
+08:31:29.745 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 1. ActivityTrackerModule (HIGHEST) 
+08:31:29.746 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 2. ActivityModule (HIGHEST) 
+08:31:29.746 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 3. SecurityModule (HIGH) 
+08:31:29.746 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 4. FusionSignalsMessageProducerModule (MEDIUM) 
+08:31:29.746 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 5. FusionModule (LOWEST) 
+08:31:29.746 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 6. SolrModule (LOWEST) 
+08:31:29.746 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 7. JSPModule (LOWEST) 
+08:31:29.746 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 8. HttpModule (LOWEST) 
+08:31:29.746 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 9. CacheModule (LOWEST) 
+08:31:29.746 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 10. RecordingModule (LOWEST) 
+08:31:29.746 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 11. DriverRegistrationModule (LOWEST) 
+08:31:29.746 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 12. ConfigurationReloadModule (LOWEST) 
+08:31:29.746 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 13. LicenseRestrictionsModule (LOWEST) 
+08:31:29.747 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 14. WebServicesModule (LOWEST) 
+08:31:29.747 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 15. MediaModule (LOWEST) 
+08:31:29.747 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 16. WorkflowModule (LOWEST) 
+08:31:29.747 [34mINFO [0;39m [36mtwigkit.Start[0;39m - 17. Wro4jModule (LOWEST) 
+08:31:29.818 [34mINFO [0;39m [36mtwigkit.activity.ActivityModule[0;39m - Activity tracker module loaded. All outbound field URLs are intercepted by default. 
+08:31:29.820 [34mINFO [0;39m [36mtwigkit.activity.ActivityModule[0;39m - Activity tracking framework module loaded. 
+08:31:29.826 [34mINFO [0;39m [36mtwigkit.security.SecurityModule[0;39m - Instantiating twigkit.security.provider.generic.RemoteUserSecurityProvider 
+08:31:29.828 [34mINFO [0;39m [36mtwigkit.security.SecurityModule[0;39m - DomainMappingFilter disabled 
+08:31:29.828 [34mINFO [0;39m [36mtwigkit.security.SecurityModule[0;39m - UserMappingFilter disabled 
+08:31:29.828 [34mINFO [0;39m [36mtwigkit.security.SecurityModule[0;39m - twigkit.security.filter.UserToGroupMappingFilter disabled 
+08:31:29.829 [34mINFO [0;39m [36mt.s.SecurityFilterExecutionModule[0;39m - Registering Authentication Filters... 
+08:31:29.830 [34mINFO [0;39m [36mt.s.SecurityFilterExecutionModule[0;39m - Registering Authorisation Filters... 
+08:31:29.832 [34mINFO [0;39m [36mtwigkit.security.SecurityModule[0;39m - Security Module loaded! 
+08:31:29.836 [34mINFO [0;39m [36mt.m.s.f.FusionSignalsMessageProducerModule[0;39m - Fusion message producer module loaded 
+08:31:29.846 [34mINFO [0;39m [36mtwigkit.search.fusion.FusionModule[0;39m - Fusion Platform Module loaded! 
+08:31:29.850 [34mINFO [0;39m [36mtwigkit.search.solr.SolrModule[0;39m - Solr Platform Module loaded! 
+08:31:29.851 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - Deploying TwigKitServlets... 
+08:31:29.860 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/services/query-suggestion-service/* -> JSONQuerySuggestionServiceServlet 
+08:31:29.861 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/services/platform/rss/* -> RSSSearchServiceServlet 
+08:31:29.863 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/services/proxy -> ProxyServlet 
+08:31:29.864 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/services/url -> RedirectServlet 
+08:31:29.865 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/services/activity/click -> ClickTrackingService 
+08:31:29.866 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/services/redirect/* -> RedirectServlet 
+08:31:29.868 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/services/migrate/* -> MigrationServlet 
+08:31:29.870 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/services/media/export/excel/* -> ExcelExportServlet 
+08:31:29.871 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/services/media/export/csv/* -> CSVExportServlet 
+08:31:29.872 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/services/media/export/offline/csv/* -> OfflineCSVExportServlet 
+08:31:29.872 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - Deploying SecureTwigKitServlets... 
+08:31:29.874 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - > /twigkit/secure/services/url -> RedirectServlet 
+08:31:29.874 [34mINFO [0;39m [36mtwigkit.ui.jsp.JSPModule[0;39m - JSP Module loaded! 
+08:31:29.876 [34mINFO [0;39m [36mtwigkit.http.HttpModule[0;39m - CORS support enabled 
+08:31:29.877 [34mINFO [0;39m [36mtwigkit.http.HttpModule[0;39m - > cors.supportedMethods: GET, POST, DELETE, HEAD 
+08:31:29.877 [34mINFO [0;39m [36mtwigkit.http.HttpModule[0;39m - > cors.allowOrigin: * 
+08:31:29.877 [34mINFO [0;39m [36mtwigkit.http.HttpModule[0;39m - Not removing whitespace from HTML as per twigkit.properties [ui.jsp.trimWhiteSpace] 
+08:31:29.878 [34mINFO [0;39m [36mtwigkit.http.HttpModule[0;39m - Http Module loaded! 
+08:31:30.217 [34mINFO [0;39m [36mtwigkit.cache.CacheModule[0;39m - Cache Module loaded! 
+08:31:30.219 [39mDEBUG[0;39m [36mt.c.reload.ConfigurationReloadModule[0;39m - Registering application configuration with configuration watcher ... 
+08:31:30.222 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/ 
+08:31:30.224 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/activity/ 
+08:31:30.225 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/activity/tracking/ 
+08:31:30.225 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/message/ 
+08:31:30.225 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/message/service/ 
+08:31:30.226 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/platforms/ 
+08:31:30.226 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/platforms/fusion/ 
+08:31:30.227 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/processors/ 
+08:31:30.227 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/processors/response/ 
+08:31:30.228 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/security/ 
+08:31:30.228 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/services/ 
+08:31:30.228 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/services/api/ 
+08:31:30.229 [39mDEBUG[0;39m [36mt.conf.reload.ConfigurationWatcher[0;39m - Registering path with watcher: file:///Users/brianland/Documents/git/att_shop/ui/src/main/resources/conf/services/suggestions/ 
+08:31:30.230 [34mINFO [0;39m [36mt.c.reload.ConfigurationReloadModule[0;39m - Configuration Reload Module loaded! 
+08:31:30.233 [34mINFO [0;39m [36mt.license.LicenseRestrictionsModule[0;39m - License Restrictions Module loaded! 
+08:31:30.247 [34mINFO [0;39m [36mtwigkit.service.WebServicesModule[0;39m - Web Services Module loaded! 
+08:31:30.552 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Supported image formats: 
+08:31:30.553 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- JPEG 2000 
+08:31:30.553 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- JPG 
+08:31:30.553 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- tiff 
+08:31:30.553 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- bmp 
+08:31:30.553 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- gif 
+08:31:30.553 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- WBMP 
+08:31:30.553 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- PNG 
+08:31:30.553 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- RAW 
+08:31:30.553 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- JPEG 
+08:31:30.554 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- btiff 
+08:31:30.554 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- PNM 
+08:31:30.554 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- tif 
+08:31:30.554 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- TIFF 
+08:31:30.554 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- wbmp 
+08:31:30.554 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- jpeg 
+08:31:30.554 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- jpg 
+08:31:30.554 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- JPEG2000 
+08:31:30.554 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- BMP 
+08:31:30.554 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- GIF 
+08:31:30.554 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- png 
+08:31:30.554 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- raw 
+08:31:30.554 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- pnm 
+08:31:30.555 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- TIF 
+08:31:30.555 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- jpeg2000 
+08:31:30.555 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- jpeg 2000 
+08:31:30.555 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - 	- BTIFF 
+08:31:30.555 [34mINFO [0;39m [36mtwigkit.media.MediaModule[0;39m - Media Module loaded! 
+08:31:30.558 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - Binding Processor classes... 
+08:31:30.561 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.solr.processors.SolrDateRangeFacetQueries 
+08:31:30.563 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.solr.processors.SolrDateRangeFacetResponse 
+08:31:30.564 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.security.processor.AddFilterProcessor 
+08:31:30.565 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.security.processor.AddRolesFilterProcessor 
+08:31:30.566 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.security.processor.RoleLocalizer 
+08:31:30.567 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.query.AddFilterProcessor 
+08:31:30.568 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.query.CompositeFieldProcessor 
+08:31:30.569 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.query.ReplaceFilterValue 
+08:31:30.570 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.CopyFacetProcessor 
+08:31:30.571 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.CopyFieldProcessor 
+08:31:30.572 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.CreateFacetProcessor 
+08:31:30.574 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.DateFacetValueFormatter 
+08:31:30.575 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.DatePartExtractor 
+08:31:30.577 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.DateRangeFacetProcessor 
+08:31:30.578 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.FacetFilterSortByCount 
+08:31:30.595 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.FacetFilterSortByValue 
+08:31:30.596 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.FacetFilterValueMappingProcessor 
+08:31:30.597 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.FacetParameterProcessor 
+08:31:30.598 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.FacetSortProcessor 
+08:31:30.599 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.FieldDateParser 
+08:31:30.599 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.FieldToMultiValueFieldProcessor 
+08:31:30.601 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.HostNameExtractor 
+08:31:30.602 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.LinkMarkupProcessor 
+08:31:30.602 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.RegExFieldValueTaggerProcessor 
+08:31:30.603 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.RemoveFacetFiltersByRegex 
+08:31:30.604 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.RemoveFacetsProcessor 
+08:31:30.605 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.ReplaceFieldValue 
+08:31:30.606 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.ReplaceFilterValue 
+08:31:30.606 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.ResponseLoggingProcessor 
+08:31:30.607 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.ResultGroupProcessor 
+08:31:30.608 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.ShallowFacetGenerator 
+08:31:30.609 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.ShallowHierarchicalFacetProcessor 
+08:31:30.609 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.TweetMarkupProcessor 
+08:31:30.610 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.FieldValueParser 
+08:31:30.610 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.FacetSequenceHierarchy 
+08:31:30.611 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - > twigkit.search.processors.response.LocaliseValues 
+08:31:30.612 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - Done binding Processor classes! 
+08:31:30.613 [34mINFO [0;39m [36mtwigkit.processor.WorkflowModule[0;39m - Processor Module loaded! 
+08:31:30.617 [39mDEBUG[0;39m [36mtwigkit.ui.js.wro4j.WroConfiguration[0;39m - In DEVELOPMENT mode - registering a 5 second resource watcher interval 
+08:31:30.618 [34mINFO [0;39m [36mtwigkit.ui.js.Wro4jModule[0;39m - Wro4j Module loaded! 
+08:31:30.619 [34mINFO [0;39m [36mtwigkit.Start[0;39m - All TwigKitModules loaded! 
+08:31:30.619 [34mINFO [0;39m [36mtwigkit.InitializerModule[0;39m - TwigKit Module loaded! 
+08:31:30.958 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - App Studio Guice Injector ready! 
+08:31:30.959 [34mINFO [0;39m [36mtwigkit.Start[0;39m - Notifying all modules that injector is ready 
+08:31:30.959 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -  
+08:31:30.961 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - Host: Sanket’s-MacBook-Pro 
+08:31:30.961 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -  
+08:31:30.963 [39mDEBUG[0;39m [36mt.f.api.session.FusionSessionStore[0;39m - Initialising Fusion session store. Each session will last for 28799000 milliseconds unless the session times out due to a prolonged period of inactivity. 
+08:31:30.973 [1;31mERROR[0;39m [36mt.m.s.f.FusionSignalsMessageProducer[0;39m - Unable to construct a valid URL to the Signals API: {} 
+java.lang.IllegalArgumentException: The Fusion Signals configuration is missing a 'collection' parameter - unable to construct a valid URL to the Signals API
+	at twigkit.message.service.fusion.util.SignalsApiRequestBuilder.getExtension(SignalsApiRequestBuilder.java:33) ~[twigkit.message.service.fusion.producer-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at twigkit.fusion.api.FusionWebserviceRequestBuilder.getURLPath(FusionWebserviceRequestBuilder.java:65) ~[twigkit.fusion.api-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at twigkit.fusion.api.FusionWebserviceRequestBuilder.build(FusionWebserviceRequestBuilder.java:60) ~[twigkit.fusion.api-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at twigkit.message.service.fusion.FusionSignalsMessageProducer.getSignalsUrl(FusionSignalsMessageProducer.java:216) [twigkit.message.service.fusion.producer-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at twigkit.message.service.fusion.FusionSignalsMessageProducer.configure(FusionSignalsMessageProducer.java:126) [twigkit.message.service.fusion.producer-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at twigkit.message.service.fusion.FusionSignalsMessageProducer.<init>(FusionSignalsMessageProducer.java:107) [twigkit.message.service.fusion.producer-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at twigkit.message.service.fusion.FusionSignalsMessageProducer$$FastClassByGuice$$dad42023.newInstance(<generated>) [guice-4.0.jar:4.0.0-SNAPSHOT]
+	at com.google.inject.internal.cglib.reflect.$FastConstructor.newInstance(FastConstructor.java:40) [guice-4.0.jar:na]
+	at com.google.inject.internal.DefaultConstructionProxyFactory$1.newInstance(DefaultConstructionProxyFactory.java:61) [guice-4.0.jar:na]
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:105) [guice-4.0.jar:na]
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:85) [guice-4.0.jar:na]
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:267) [guice-4.0.jar:na]
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46) [guice-4.0.jar:na]
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103) [guice-4.0.jar:na]
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40) [guice-4.0.jar:na]
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:145) [guice-4.0.jar:na]
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41) [guice-4.0.jar:na]
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56) [guice-4.0.jar:na]
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016) [guice-4.0.jar:na]
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092) [guice-4.0.jar:na]
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012) [guice-4.0.jar:na]
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1051) [guice-4.0.jar:na]
+	at twigkit.activity.ActivityTrackerModule.afterInjectorInitialised(ActivityTrackerModule.java:104) [twigkit.activity.tracker-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at twigkit.Start$2.injectorReady(Start.java:85) [twigkit.commons-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_152]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_152]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_152]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_152]
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74) [guava-18.0.jar:na]
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47) [guava-18.0.jar:na]
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322) [guava-18.0.jar:na]
+	at com.google.common.eventbus.AsyncEventBus.access$001(AsyncEventBus.java:34) [guava-18.0.jar:na]
+	at com.google.common.eventbus.AsyncEventBus$1.run(AsyncEventBus.java:117) [guava-18.0.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_152]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_152]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_152]
+08:31:30.974 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - License VALID until Wed Nov 14 23:00:00 CST 2018 
+08:31:30.975 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - Licensed host: * 
+08:31:30.975 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - Licensed email address: license@lucidworks.com 
+08:31:30.975 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - Licensed modules: 
+08:31:30.977 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > fusion(scope: unlimited) 
+08:31:30.977 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > environment(scope: [Ljava.lang.String;@5ca4c88a) 
+08:31:30.977 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > fusion.connectors(scope: unlimited) 
+08:31:30.977 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > fusion.server(scope: unlimited) 
+08:31:30.977 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > webservices(scope: unlimited) 
+08:31:30.977 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > security(scope: unlimited) 
+08:31:30.977 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > workflow(scope: unlimited) 
+08:31:30.977 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > solr(scope: unlimited) 
+08:31:30.977 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > organisation(scope: [Ljava.lang.String;@1791e231) 
+08:31:30.978 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > media(scope: unlimited) 
+08:31:30.978 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m - > user(scope: [Ljava.lang.String;@55397d15) 
+08:31:30.978 [34mINFO [0;39m [36mtwigkit.TwigKitApplication[0;39m -  
+08:31:30.979 [31mWARN [0;39m [36mt.conf.AbstractConfigurationProvider[0;39m - Class not found for [activity.signal.processing.click] 
+08:31:30.983 [31mWARN [0;39m [36mt.conf.AbstractConfigurationProvider[0;39m - Class not found for [activity.signal.processing.request] 
+08:31:30.985 [31mWARN [0;39m [36mt.conf.AbstractConfigurationProvider[0;39m - Class not found for [activity.signal.processing.response] 
+08:31:30.987 [34mINFO [0;39m [36mt.s.SecurityFilterExecutionModule[0;39m - Initialising SecurityFilters... 
+08:31:30.987 [34mINFO [0;39m [36mt.security.filter.RemoteUserFilter[0;39m - Using RemoteUserFilter to add Users (from HttpServletRequest RemoteUser attribute) to SecurityContext 
+08:31:30.987 [34mINFO [0;39m [36mt.s.SecurityFilterExecutionModule[0;39m - > AuthenticationFilter [RemoteUserFilter] initialised! 
+08:31:30.987 [31mWARN [0;39m [36mt.conf.AbstractConfigurationProvider[0;39m - Class not found for [activity.signal.processing.login] 
+08:31:31.058 [39mDEBUG[0;39m [36mtwigkit.ui.js.wro4j.WroConfiguration[0;39m - In DEVELOPMENT mode - registering a 5 second resource watcher interval 
+08:31:31.151 [31mWARN [0;39m [36mt.m.servlet.OfflineCSVExportServlet[0;39m - No configuration found for offline export under services/media/export/offline. Default settings used. 
+08:31:31.151 [34mINFO [0;39m [36mt.m.servlet.OfflineCSVExportServlet[0;39m - Initialised offline export servlet with the following properties: 
+08:31:31.151 [34mINFO [0;39m [36mt.m.servlet.OfflineCSVExportServlet[0;39m - 	- folder: offline-exports 
+08:31:31.151 [34mINFO [0;39m [36mt.m.servlet.OfflineCSVExportServlet[0;39m - 	- compress: false 
+08:31:31.151 [34mINFO [0;39m [36mt.m.servlet.OfflineCSVExportServlet[0;39m - 	- temp folder: /var/folders/3h/7jwpt2gd69n0r04xgbt7r9zr0000gn/T 
+08:31:31.151 [34mINFO [0;39m [36mt.m.servlet.OfflineCSVExportServlet[0;39m - 	- redirect path: /export-in-progress/ 
+08:31:31.791 [34mINFO [0;39m [36mtwigkit.frame.CachedImageIOService[0;39m - CachedImageIOService offline path: /tmp/twigkit/offline 
+08:31:31.797 [39mDEBUG[0;39m [36mtwigkit.frame.CachedImageIOService[0;39m - Creating cache from defaults! 
+08:31:32.166 [34mINFO [0;39m [36mtwigkit.frame.CachedImageIOService[0;39m - CachedImageIOService offline path: /tmp/twigkit/offline 
+08:32:29.643 [39mDEBUG[0;39m [36mt.license.LicenseMonitor$ExpiryCheck[0;39m - Scheduling new license expiry notification with MONTHLY frequency 
+08:32:29.648 [31mWARN [0;39m [36mtwigkit.ApplicationAlertSubscriber[0;39m - The license for Twigkit expires on: 14 Nov 2018 23:00:00 
+08:36:57.892 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrQueryAdapter[0;39m - Mapped Solr Query [start=0&rows=10&hl=true&q=*:*&facet=true&fl=*,score&fq={!tag%3DtaxoStyle_s}taxoStyle_s:(Smartphones)&username=anonymous&session=d9704a33-af1a-488d-9461-29c3cf06997f&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR&userId=szisu4] 
+08:36:57.893 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrQueryAdapter[0;39m - Mapped Solr Query [start=0&rows=10&hl=true&q=*:*&facet=true&fl=*,score&fq={!tag%3DtaxoStyle_s}taxoStyle_s:(Smartphones)&username=anonymous&session=d9704a33-af1a-488d-9461-29c3cf06997f&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR&userId=szisu4] 
+08:36:57.893 [39mDEBUG[0;39m [36mtwigkit.search.solr.HttpSolrPlatform[0;39m - Returning HTTP client for http://54.190.188.112:8764/api/apollo/query/homepage-banner-shop 
+08:36:57.894 [39mDEBUG[0;39m [36mtwigkit.search.solr.HttpSolrPlatform[0;39m - Returning HTTP client for http://54.190.188.112:8764/api/apollo/query/homepage-banner-shop 
+08:36:57.982 [39mDEBUG[0;39m [36mtwigkit.search.solr.HttpSolrPlatform[0;39m - Using basic HTTP authentication for Solr server org.apache.solr.client.solrj.impl.HttpSolrClient@5241499e 
+08:36:58.425 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrPlatform[0;39m - Searching Solr with start=0&rows=10&hl=true&q=*:*&facet=true&fl=*,score&fq={!tag%3DtaxoStyle_s}taxoStyle_s:(Smartphones)&username=anonymous&session=d9704a33-af1a-488d-9461-29c3cf06997f&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR&userId=szisu4 took 532 ms 
+08:36:58.436 [34mINFO [0;39m [36mt.a.p.AddRuntimeInformationProcessor[0;39m - Configuration property twigkit.app-id is missing - add this in order to track activity across multiple applications 
+08:36:58.443 [1;31mERROR[0;39m [36mt.m.s.f.FusionSignalsMessageProducer[0;39m - The URL null is malformed 
+java.net.MalformedURLException: null
+	at java.net.URL.<init>(URL.java:627) ~[na:1.8.0_152]
+	at java.net.URL.<init>(URL.java:490) ~[na:1.8.0_152]
+	at java.net.URL.<init>(URL.java:439) ~[na:1.8.0_152]
+	at twigkit.message.service.fusion.FusionSignalsMessageProducer.postMessage(FusionSignalsMessageProducer.java:170) [twigkit.message.service.fusion.producer-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at twigkit.message.service.fusion.FusionSignalsMessageProducer.send(FusionSignalsMessageProducer.java:139) [twigkit.message.service.fusion.producer-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at twigkit.message.service.fusion.FusionSignalsMessageProducer.send(FusionSignalsMessageProducer.java:61) [twigkit.message.service.fusion.producer-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at twigkit.activity.subscribers.EventSubscriber.submit(EventSubscriber.java:40) [twigkit.activity.tracker-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at twigkit.activity.subscribers.ResponseSubscriber.search(ResponseSubscriber.java:55) [twigkit.activity.tracker-4.0.0-SNAPSHOT.jar:4.0.0-SNAPSHOT]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_152]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_152]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_152]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_152]
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74) [guava-18.0.jar:na]
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322) [guava-18.0.jar:na]
+	at com.google.common.eventbus.AsyncEventBus.access$001(AsyncEventBus.java:34) [guava-18.0.jar:na]
+	at com.google.common.eventbus.AsyncEventBus$1.run(AsyncEventBus.java:117) [guava-18.0.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_152]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_152]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_152]
+Caused by: java.lang.NullPointerException: null
+	at java.net.URL.<init>(URL.java:532) ~[na:1.8.0_152]
+	... 18 common frames omitted
+08:36:58.444 [31mWARN [0;39m [36mt.m.s.f.FusionSignalsMessageProducer[0;39m - Error when sending message - disabling message channel and trying again after 10s 
+08:36:58.551 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrPlatform[0;39m - Searching Solr with start=0&rows=10&hl=true&q=*:*&facet=true&fl=*,score&fq={!tag%3DtaxoStyle_s}taxoStyle_s:(Smartphones)&username=anonymous&session=d9704a33-af1a-488d-9461-29c3cf06997f&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR&userId=szisu4 took 658 ms 
+08:36:58.554 [34mINFO [0;39m [36mt.a.p.AddRuntimeInformationProcessor[0;39m - Configuration property twigkit.app-id is missing - add this in order to track activity across multiple applications 
+08:37:01.190 [39mDEBUG[0;39m [36mt.u.j.w.r.RuntimeWroManagerFactory[0;39m - Attempting to read wro.xml from /WEB-INF/ 
+08:37:11.776 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrQueryAdapter[0;39m - Mapped Solr Query [start=0&rows=10&hl=true&q=*:*&facet=true&fl=*,score&fq={!tag%3DtaxoStyle_s}taxoStyle_s:(Smartphones)&username=anonymous&session=d9704a33-af1a-488d-9461-29c3cf06997f&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR&userId=v1t8mm] 
+08:37:11.776 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrQueryAdapter[0;39m - Mapped Solr Query [start=0&rows=10&hl=true&q=*:*&facet=true&fl=*,score&fq={!tag%3DtaxoStyle_s}taxoStyle_s:(Smartphones)&username=anonymous&session=d9704a33-af1a-488d-9461-29c3cf06997f&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR&userId=v1t8mm] 
+08:37:11.776 [39mDEBUG[0;39m [36mtwigkit.search.solr.HttpSolrPlatform[0;39m - Returning HTTP client for http://54.190.188.112:8764/api/apollo/query/homepage-banner-shop 
+08:37:11.778 [39mDEBUG[0;39m [36mtwigkit.search.solr.HttpSolrPlatform[0;39m - Returning HTTP client for http://54.190.188.112:8764/api/apollo/query/homepage-banner-shop 
+08:37:12.317 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrPlatform[0;39m - Searching Solr with start=0&rows=10&hl=true&q=*:*&facet=true&fl=*,score&fq={!tag%3DtaxoStyle_s}taxoStyle_s:(Smartphones)&username=anonymous&session=d9704a33-af1a-488d-9461-29c3cf06997f&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR&userId=v1t8mm took 541 ms 
+08:37:12.320 [34mINFO [0;39m [36mt.a.p.AddRuntimeInformationProcessor[0;39m - Configuration property twigkit.app-id is missing - add this in order to track activity across multiple applications 
+08:37:12.388 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrPlatform[0;39m - Searching Solr with start=0&rows=10&hl=true&q=*:*&facet=true&fl=*,score&fq={!tag%3DtaxoStyle_s}taxoStyle_s:(Smartphones)&username=anonymous&session=d9704a33-af1a-488d-9461-29c3cf06997f&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR&userId=v1t8mm took 612 ms 
+08:37:12.391 [34mINFO [0;39m [36mt.a.p.AddRuntimeInformationProcessor[0;39m - Configuration property twigkit.app-id is missing - add this in order to track activity across multiple applications 
+08:37:21.093 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrQueryAdapter[0;39m - Mapped Solr Query [start=0&rows=10&hl=true&q=skuId_s:sku7830414&facet=true&fl=*,score&username=anonymous&session=d9704a33-af1a-488d-9461-29c3cf06997f&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR] 
+08:37:21.093 [39mDEBUG[0;39m [36mtwigkit.search.solr.HttpSolrPlatform[0;39m - Returning HTTP client for http://54.190.188.112:8764/api/apollo/query/att_shop 
+08:37:21.095 [39mDEBUG[0;39m [36mtwigkit.search.solr.HttpSolrPlatform[0;39m - Using basic HTTP authentication for Solr server org.apache.solr.client.solrj.impl.HttpSolrClient@26b232e5 
+08:37:21.096 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrQueryAdapter[0;39m - Mapped Solr Query [start=0&rows=4&hl=true&q=*:*&facet=true&fl=*,score&username=anonymous&session=d9704a33-af1a-488d-9461-29c3cf06997f&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR&item_id=sku7830414] 
+08:37:21.097 [39mDEBUG[0;39m [36mtwigkit.search.solr.HttpSolrPlatform[0;39m - Returning HTTP client for http://54.190.188.112:8764/api/apollo/query/att_item_recommendations 
+08:37:21.099 [39mDEBUG[0;39m [36mtwigkit.search.solr.HttpSolrPlatform[0;39m - Using basic HTTP authentication for Solr server org.apache.solr.client.solrj.impl.HttpSolrClient@1ca1cb5c 
+08:37:21.376 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrPlatform[0;39m - Searching Solr with start=0&rows=4&hl=true&q=*:*&facet=true&fl=*,score&username=anonymous&session=d9704a33-af1a-488d-9461-29c3cf06997f&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR&item_id=sku7830414 took 280 ms 
+08:37:21.378 [34mINFO [0;39m [36mt.a.p.AddRuntimeInformationProcessor[0;39m - Configuration property twigkit.app-id is missing - add this in order to track activity across multiple applications 
+08:37:33.034 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrPlatform[0;39m - Searching Solr with start=0&rows=10&hl=true&q=skuId_s:sku7830414&facet=true&fl=*,score&username=anonymous&session=d9704a33-af1a-488d-9461-29c3cf06997f&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR took 11941 ms 
+08:37:33.035 [34mINFO [0;39m [36mt.a.p.AddRuntimeInformationProcessor[0;39m - Configuration property twigkit.app-id is missing - add this in order to track activity across multiple applications 
+08:47:29.065 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrQueryAdapter[0;39m - Mapped Solr Query [start=0&rows=10&hl=true&q=*:*&facet=true&fl=*,score&fq={!tag%3DtaxoStyle_s}taxoStyle_s:(Smartphones)&username=anonymous&session=808f6546-5b46-45ae-8340-3ab2913f2e99&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR&userId=yihs2] 
+08:47:29.066 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrQueryAdapter[0;39m - Mapped Solr Query [start=0&rows=10&hl=true&q=*:*&facet=true&fl=*,score&fq={!tag%3DtaxoStyle_s}taxoStyle_s:(Smartphones)&username=anonymous&session=808f6546-5b46-45ae-8340-3ab2913f2e99&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR&userId=yihs2] 
+08:47:29.068 [39mDEBUG[0;39m [36mtwigkit.search.solr.HttpSolrPlatform[0;39m - Returning HTTP client for http://54.190.188.112:8764/api/apollo/query/homepage-banner-shop 
+08:47:29.068 [39mDEBUG[0;39m [36mtwigkit.search.solr.HttpSolrPlatform[0;39m - Returning HTTP client for http://54.190.188.112:8764/api/apollo/query/homepage-banner-shop 
+08:47:29.361 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrPlatform[0;39m - Searching Solr with start=0&rows=10&hl=true&q=*:*&facet=true&fl=*,score&fq={!tag%3DtaxoStyle_s}taxoStyle_s:(Smartphones)&username=anonymous&session=808f6546-5b46-45ae-8340-3ab2913f2e99&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR&userId=yihs2 took 293 ms 
+08:47:29.365 [34mINFO [0;39m [36mt.a.p.AddRuntimeInformationProcessor[0;39m - Configuration property twigkit.app-id is missing - add this in order to track activity across multiple applications 
+08:47:29.418 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrPlatform[0;39m - Searching Solr with start=0&rows=10&hl=true&q=*:*&facet=true&fl=*,score&fq={!tag%3DtaxoStyle_s}taxoStyle_s:(Smartphones)&username=anonymous&session=808f6546-5b46-45ae-8340-3ab2913f2e99&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR&userId=yihs2 took 350 ms 
+08:47:29.422 [34mINFO [0;39m [36mt.a.p.AddRuntimeInformationProcessor[0;39m - Configuration property twigkit.app-id is missing - add this in order to track activity across multiple applications 
+08:47:31.138 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrQueryAdapter[0;39m - Mapped Solr Query [start=0&rows=10&hl=true&q=*:*&facet=true&fl=*,score&username=anonymous&session=808f6546-5b46-45ae-8340-3ab2913f2e99&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR] 
+08:47:31.138 [39mDEBUG[0;39m [36mtwigkit.search.solr.HttpSolrPlatform[0;39m - Returning HTTP client for http://54.190.188.112:8764/api/apollo/query/att_shop 
+08:47:32.208 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrPlatform[0;39m - Searching Solr with start=0&rows=10&hl=true&q=*:*&facet=true&fl=*,score&username=anonymous&session=808f6546-5b46-45ae-8340-3ab2913f2e99&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR took 1070 ms 
+08:47:32.211 [34mINFO [0;39m [36mt.a.p.AddRuntimeInformationProcessor[0;39m - Configuration property twigkit.app-id is missing - add this in order to track activity across multiple applications 
+08:47:35.907 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrQueryAdapter[0;39m - Mapped Solr Query [start=0&rows=10&hl=true&q=ipad&facet=true&fl=*,score&username=anonymous&session=808f6546-5b46-45ae-8340-3ab2913f2e99&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR] 
+08:47:35.907 [39mDEBUG[0;39m [36mtwigkit.search.solr.HttpSolrPlatform[0;39m - Returning HTTP client for http://54.190.188.112:8764/api/apollo/query/att_shop 
+08:47:36.713 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrPlatform[0;39m - Searching Solr with start=0&rows=10&hl=true&q=ipad&facet=true&fl=*,score&username=anonymous&session=808f6546-5b46-45ae-8340-3ab2913f2e99&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR took 806 ms 
+08:47:36.716 [34mINFO [0;39m [36mt.a.p.AddRuntimeInformationProcessor[0;39m - Configuration property twigkit.app-id is missing - add this in order to track activity across multiple applications 
+08:47:39.496 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrQueryAdapter[0;39m - Mapped Solr Query [start=0&rows=10&hl=true&q=skuId_s:sku8360524&facet=true&fl=*,score&username=anonymous&session=808f6546-5b46-45ae-8340-3ab2913f2e99&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR] 
+08:47:39.496 [39mDEBUG[0;39m [36mtwigkit.search.solr.HttpSolrPlatform[0;39m - Returning HTTP client for http://54.190.188.112:8764/api/apollo/query/att_shop 
+08:47:39.500 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrQueryAdapter[0;39m - Mapped Solr Query [start=0&rows=4&hl=true&q=*:*&facet=true&fl=*,score&username=anonymous&session=808f6546-5b46-45ae-8340-3ab2913f2e99&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR&item_id=sku8360524] 
+08:47:39.500 [39mDEBUG[0;39m [36mtwigkit.search.solr.HttpSolrPlatform[0;39m - Returning HTTP client for http://54.190.188.112:8764/api/apollo/query/att_item_recommendations 
+08:47:39.558 [39mDEBUG[0;39m [36mt.a.subscribers.ClickEventSubscriber[0;39m - Adding query ipad to click signal 
+08:47:39.559 [34mINFO [0;39m [36mt.a.p.AddRuntimeInformationProcessor[0;39m - Configuration property twigkit.app-id is missing - add this in order to track activity across multiple applications 
+08:47:39.692 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrPlatform[0;39m - Searching Solr with start=0&rows=4&hl=true&q=*:*&facet=true&fl=*,score&username=anonymous&session=808f6546-5b46-45ae-8340-3ab2913f2e99&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR&item_id=sku8360524 took 192 ms 
+08:47:39.694 [34mINFO [0;39m [36mt.a.p.AddRuntimeInformationProcessor[0;39m - Configuration property twigkit.app-id is missing - add this in order to track activity across multiple applications 
+08:47:39.932 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrPlatform[0;39m - Searching Solr with start=0&rows=10&hl=true&q=skuId_s:sku8360524&facet=true&fl=*,score&username=anonymous&session=808f6546-5b46-45ae-8340-3ab2913f2e99&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR took 436 ms 
+08:47:39.933 [34mINFO [0;39m [36mt.a.p.AddRuntimeInformationProcessor[0;39m - Configuration property twigkit.app-id is missing - add this in order to track activity across multiple applications 
+08:54:42.682 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrQueryAdapter[0;39m - Mapped Solr Query [start=0&rows=10&hl=true&q=*:*&facet=true&fl=*,score&fq={!tag%3DtaxoStyle_s}taxoStyle_s:(Smartphones)&username=anonymous&session=e904ecc8-fca0-4a8b-a25f-2e95d6d1e51c&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR&userId=njwyr] 
+08:54:42.682 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrQueryAdapter[0;39m - Mapped Solr Query [start=0&rows=10&hl=true&q=*:*&facet=true&fl=*,score&fq={!tag%3DtaxoStyle_s}taxoStyle_s:(Smartphones)&username=anonymous&session=e904ecc8-fca0-4a8b-a25f-2e95d6d1e51c&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR&userId=njwyr] 
+08:54:42.683 [39mDEBUG[0;39m [36mtwigkit.search.solr.HttpSolrPlatform[0;39m - Returning HTTP client for http://54.190.188.112:8764/api/apollo/query/homepage-banner-shop 
+08:54:42.683 [39mDEBUG[0;39m [36mtwigkit.search.solr.HttpSolrPlatform[0;39m - Returning HTTP client for http://54.190.188.112:8764/api/apollo/query/homepage-banner-shop 
+08:54:42.967 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrPlatform[0;39m - Searching Solr with start=0&rows=10&hl=true&q=*:*&facet=true&fl=*,score&fq={!tag%3DtaxoStyle_s}taxoStyle_s:(Smartphones)&username=anonymous&session=e904ecc8-fca0-4a8b-a25f-2e95d6d1e51c&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR&userId=njwyr took 284 ms 
+08:54:42.969 [34mINFO [0;39m [36mt.a.p.AddRuntimeInformationProcessor[0;39m - Configuration property twigkit.app-id is missing - add this in order to track activity across multiple applications 
+08:54:43.062 [39mDEBUG[0;39m [36mtwigkit.search.solr.SolrPlatform[0;39m - Searching Solr with start=0&rows=10&hl=true&q=*:*&facet=true&fl=*,score&fq={!tag%3DtaxoStyle_s}taxoStyle_s:(Smartphones)&username=anonymous&session=e904ecc8-fca0-4a8b-a25f-2e95d6d1e51c&spellcheck=true&spellcheck.collate=true&qt=/&q.op=OR&userId=njwyr took 379 ms 
+08:54:43.065 [34mINFO [0;39m [36mt.a.p.AddRuntimeInformationProcessor[0;39m - Configuration property twigkit.app-id is missing - add this in order to track activity across multiple applications 

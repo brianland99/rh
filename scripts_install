@@ -1,0 +1,11 @@
+#!/bin/sh
+if [ -z "$1" ]; then
+  PROJECT_LOCATION=./
+else
+  PROJECT_LOCATION=$1
+fi
+echo "Pulling latest app scripts and install to $PROJECT_LOCATION"
+git clone https://github.com/twigkit/app-scripts.git
+cp -R app-scripts/* $PROJECT_LOCATION
+rm -rf app-scripts/
+echo "Scripts installed in $PROJECT_LOCATION, you can now use the ./twigkit command"

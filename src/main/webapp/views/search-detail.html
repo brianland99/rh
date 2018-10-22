@@ -1,0 +1,153 @@
+<!-- -------------------------------------------- -->
+<!-- Build the data model                         -->
+<!-- -------------------------------------------- -->
+
+<!-- Define a search platform to fetch data from -->
+<search:platform var="platform" conf="platforms.fusion"></search:platform>
+
+<!-- Search for customer attributes -->
+<search:query var="query" query="skuId_s:{{params.id}}"></search:query>
+
+<!-- Send query to platform and retrieve documents back -->
+<search:response var="response" platform="platform" query="query">
+    <widget:spinner></widget:spinner>
+</search:response>
+
+
+<search:platform var="item_recs_platform" conf="platforms.fusion.item_recs"></search:platform>
+
+<!-- Search for customer attributes -->
+<search:query var="item_recs_query" parameters="-" results-per-page="4">
+    <query:custom name="item_id" value="{{params.id}}"></query:custom>
+</search:query>
+
+<!-- Send query to platform and retrieve documents back -->
+<search:response var="item_recs_response" platform="item_recs_platform" query="item_recs_query">
+    <widget:spinner></widget:spinner>
+</search:response>
+
+<!-- -------------------------------------------- -->
+<!-- Define the view                              -->
+<!-- -------------------------------------------- -->
+
+<helper:title title="Product Detail"></helper:title>
+
+<!-- HEADER -->
+<layout:include file="views/partials/header.tpl.html" action="search" class="top-header"></layout:include>
+
+<!-- CONTENT -->
+<layout:grid styling="row-offcanvas" class="detail-page">
+    <!-- Animate page when response received -->
+    <layout:animate animation="animate-fadeInUp" on="response" layout-grid>
+
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 613.5 729">
+            <path d="M0 430s149-19 158 76S0 729 0 729z" opacity=".5" fill="#eff6f9"/>
+            <g opacity=".5">
+                <path d="M461.61 0S325.5 13.33 325.5 131.87 457.78 238 471.83 303.61s-45.79 75-25.54 112.58 94.36-18.73 167.21 61.15V1.52z" fill="#eff6f9"/>
+                <path d="M458.64.37L414.19 0s-178.6 14.59-178.6 144.37 173.57 116.23 192 188-60.08 82.07-33.51 123.25 123.82-20.51 219.42 66.95v-45.23c-72.85-79.88-147-23.53-167.21-61.15s39.58-47 25.54-112.58-146.33-53.2-146.33-171.74C325.5 23.73 438.76 3.15 458.64.37z" fill="#dfeef4"/>
+            </g>
+        </svg>
+
+        <layout:grid class="product-wrapper">
+            <!-- CONTENT > RESULTS -->
+            <layout:block md="2-3">
+                <layout:box>
+
+                    <layout:grid class="product">
+                        <layout:block>
+                            <search:result-list response="response">
+                                <search:result>
+                                    <search:field name="styleIndicator_s" styling="label-left" label="" class="cat" ></search:field>
+
+                                    
+                                    <search:field name="productName_s" styling="title" label=""></search:field>
+                                    <search:field name="skuId_s" styling="label-inline" label="SKU"></search:field>
+                                     <search:field name="avgCustomerRating_s" styling="label-inline" class="cat" label="Rating"></search:field>
+                                    <search:field name="M2MPrice_s" label="" styling="label-left" prefix="$" class="price"></search:field>
+                                <search:field name="description_t" styling="label-inline" label=""></search:field>
+                                    
+
+                                    <div class="product-image-container">
+                                                                <!--<img class="product-image-missing" ng-src="assets/missing.png"/>-->
+                                        <!--<img class="product-image" ng-src="https://www.bhphotovideo.com/images/images50x50/{{result.fields.item_url.val | actualValue}}_{{result.fields.image_name.val | actual}}.jpg" onerror="this.style.display='none';"/>-->
+                                        <!--<img class="product-image" ng-src="https://www.bhphotovideo.com/images/images100x100/{{result.fields.item_url.val | actualValue}}_{{result.fields.image_name.val | actual}}.jpg" onerror="this.style.display='none';"/>-->
+                                        <!--<img class="product-image" ng-src="https://www.bhphotovideo.com/images/images150x150/{{result.fields.item_url.val | actualValue}}_{{result.fields.image_name.val | actual}}.jpg" onerror="this.style.display='none';"/>-->
+                                        <!--<img class="product-image" ng-src="https://www.bhphotovideo.com/images/images250x250/{{result.fields.item_url.val | actualValue}}_{{result.fields.image_name.val | actual}}.jpg" onerror="this.style.display='none';"/>-->
+                                        <img class="product-image" ng-src="{{result.fields.largeJpgImageURL_s.val | actualValue}}" onerror="this.style.display='none';"/>
+                                        <!--<img class="product-image" ng-src="https://www.bhphotovideo.com/images/images2500x2500/{{result.fields.item_url.val | actualValue}}_{{result.fields.image_name.val | actual}}.jpg" onerror="this.style.display='none';"/>-->
+                                    </div>
+                                </search:result>
+                            </search:result-list>
+                        </layout:block>
+                    </layout:grid>
+
+                </layout:box>
+            </layout:block>
+
+            <layout:block md="1-3" class="info">
+                <layout:box>
+                    <search:result-list response="response">
+                        <search:result>
+                          <search:field name="styleIndicator_s" label="Category" styling="label-left"></search:field>
+ 
+                          <search:field name="manufacturerEscaped_s" label="Manufacturer" styling="label-left"></search:field>
+                            <search:field name="skuId_s" label="SKU" styling="label-left"></search:field>
+                            <search:field name="color_s" label="Color" styling="label-left"></search:field>
+ 
+                            <search:field name="availability_s" label="Availability" styling="label-left" class="inline-txt"></search:field>
+                            <search:field name="dimensions_s" label="Dimensions" styling="label-left"></search:field>
+                            <search:field name="taxoFeatures_ss" label="Features" styling="label-left" class="inline-txt"></search:field>
+  
+                            <a href="#" class="buy-btn">Add to Cart</a>
+                        </search:result>
+                    </search:result-list>
+                </layout:box>
+            </layout:block>
+        </layout:grid>
+
+
+        <layout:grid class="wrapper">
+            <layout:block>
+                <layout:box>
+
+                    <layout:grid  class="info">
+                        <layout:block>
+                            <layout:box>
+                                <h3>People who viewed this also viewed:</h3>
+
+                                <search:result-list response="item_recs_response" styling="cards-sm-1 cards-md-4 cards-lg-4">
+                              
+                                    <search:result>
+                                    
+
+                                        <div class="product-image-container">
+                                            <!--<img class="product-image-missing" ng-src="assets/missing.png"/>-->
+                                            <!--<img class="product-image" ng-src="https://www.bhphotovideo.com/images/images50x50/{{result.fields.item_url.val | actualValue}}_{{result.fields.image_name.val | actual}}.jpg" onerror="this.style.display='none';"/>-->
+                                            <!--<img class="product-image" ng-src="https://www.bhphotovideo.com/images/images100x100/{{result.fields.item_url.val | actualValue}}_{{result.fields.image_name.val | actual}}.jpg" onerror="this.style.display='none';"/>-->
+                                            <!--<img class="product-image" ng-src="https://www.bhphotovideo.com/images/images150x150/{{result.fields.item_url.val | actualValue}}_{{result.fields.image_name.val | actual}}.jpg" onerror="this.style.display='none';"/>-->
+                                            <!--<img class="product-image" ng-src="https://www.bhphotovideo.com/images/images250x250/{{result.fields.item_url.val | actualValue}}_{{result.fields.image_name.val | actual}}.jpg" onerror="this.style.display='none';"/>-->
+                                           <img class="product-image" ng-if="result.fields.imageURL_s.val"
+                                             ng-src="{{result.fields.imageURL_s.val | actualValue}}"
+                                             default-src="assets/missing.jpg"/>
+                                            <!--<img ng-if="!result.fields.item_url.val"  class="product-image-missing" ng-src="assets/missing.png"/>                                        &lt;!&ndash;<img class="product-image" ng-src="https://www.bhphotovideo.com/images/images2500x2500/{{result.fields.item_url.val | actualValue}}_{{result.fields.image_name.val | actual}}.jpg" onerror="this.style.display='none';"/>&ndash;&gt;-->
+                                        </div>
+                                        <search:field name="taxoStyle_s" styling="label-left" label="" class="cat" ></search:field>
+                                          <search:field name="deviceType_s" styling="label-left" label="" class="cat" ></search:field>
+                                        <search:field name="productName_s" styling="title" label="" url="#/search/{{result.fields.skuId_s.val | actualValue}}"></search:field>
+                                        <search:field name="skuId_s" styling="label-left" label="SKU" default-value="None"></search:field>
+                                        <search:field name="DeviceOnlyPrice_s" styling="label-left" label="" prefix="$" class="price"></search:field>
+                                    </search:result>
+                                </search:result-list>
+                            </layout:box>
+                        </layout:block>
+                    </layout:grid>
+
+                </layout:box>
+            </layout:block>
+        </layout:grid>
+
+
+    </layout:animate>
+
+</layout:grid>
+
