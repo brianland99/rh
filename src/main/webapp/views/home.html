@@ -6,12 +6,12 @@
 <search:platform var="platform" conf="platforms.fusion.banner"></search:platform>
 
 <!-- Search for customer attributes -->
-<search:query var="query" parameters="none" max-results="5">
+<search:query var="query" parameters="none" filters="sku.item_str['Barstool']" max-results="5">
     <query:custom name="userId" value="{{params.userId}}"></query:custom>
-    <query-filter field="taxoStyle_s" value="Smartphones"></query-filter>
+
 </search:query>
 
-<search:query var="sliderQuery" parameters="none" filters="taxoStyle_s['Smartphones']" max-results="3">
+<search:query var="sliderQuery" parameters="none" filters="sku.item_str['Barstool']" max-results="3">
     <query:custom name="userId" value="{{params.userId}}"></query:custom>
 </search:query>
 
@@ -49,10 +49,10 @@
                                             <layout:block md="1-2" class="info">
                                                 <layout:box>
                                                     <p class="cat">{{result.fields.styleIndicator_s.val | actualValue}}</p>
-                                                    <h3>{{result.fields.productName_s.val | actualValue}}</h3>
+                                                    <h3>{{result.fields.displayName.val | actualValue}}</h3>
                                                     <p>{{result.fields.selling_point_search.val | actual}}</p>
-                                                    <a class="btn" href="#/search/{{result.fields.sku_no.val | actualValue}}">Shop Now</a>
-    <search:field name="longDescription_t" label="" styling="description" class="inline-txt"></search:field>
+                                                    <a class="btn" href="#/search/{{result.fields.product.repositoryId.val | actualValue}}">Shop Now</a>
+    <search:field name="product.displayName" label="" styling="description" class="inline-txt"></search:field>
 
                                                 </layout:box>
                                             </layout:block>
@@ -96,9 +96,9 @@
                                     <search:field name="styleIndicator_s" styling="label-left" label="" class="cat" >
                                           <search:field name="deviceType_s" styling="label-left" label="" class="cat" ></search:field>
                                     </search:field>
-                                        <search:field name="productName_s" styling="title" url="#/search/{{result.fields.skuId_s.val | actualValue}}"></search:field>
-                                    <search:field name="skuId_s" styling="label-left" label="SKU"></search:field>
-                                    <search:field name="ATTNextCommitmentTerm_24_Price_s" styling="label-left" label="" prefix="$" class="price"></search:field>
+                                        <search:field name="parentCategory.displayName_str" styling="title" url="#/search/{{result.fields.product.repositoryId.val | actualValue}}"></search:field>
+                                    <search:field name="product.repositoryId" styling="label-left" label="SKU"></search:field>
+                                    <search:field name="price" styling="label-left" label="" prefix="$" class="price"></search:field>
 
                                 </search:result>
                             </search:result-list>
