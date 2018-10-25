@@ -137,9 +137,9 @@
                             <!-- shows category for accessories             <search:field name="deviceType_s" styling="label-left" label="" class="cat" ></search:field>. -->
 
 
-                                        <search:field name="product.displayName_str" styling="title" url="#/search/{{result.fields.record.id.val | actualValue}}"></search:field>
+                                        <search:field name="displayName_str" styling="title" url="#/search/{{result.fields.productID.val | actualValue}}"></search:field>
                               
-                                        <search:field name="M2MPrice_s" styling="label-left" label="" class="price" prefix="$"></search:field>
+                                        <search:field name="sku.currentPrice" styling="label-left" label="" class="price" prefix="$"></search:field>
                                     </search:result>
                                 </search:result-list>
 

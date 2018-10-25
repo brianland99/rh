@@ -6,7 +6,7 @@
 <search:platform var="platform" conf="platforms.fusion"></search:platform>
 
 <!-- Search for customer attributes -->
-<search:query var="query" query="skuId_s:{{params.id}}"></search:query>
+<search:query var="query" query="productID:{{params.id}}"></search:query>
 
 <!-- Send query to platform and retrieve documents back -->
 <search:response var="response" platform="platform" query="query">
@@ -57,13 +57,13 @@
                         <layout:block>
                             <search:result-list response="response">
                                 <search:result>
-                                    <search:field name="styleIndicator_s" styling="label-left" label="" class="cat" ></search:field>
+                                    <search:field name="parentCategory.displayName_str" styling="label-left" label="" class="cat" ></search:field>
 
                                     
-                                    <search:field name="productName_s" styling="title" label=""></search:field>
+                                    <search:field name="displayName_str" styling="title" label=""></search:field>
                                     <search:field name="skuId_s" styling="label-inline" label="SKU"></search:field>
                                      <search:field name="avgCustomerRating_s" styling="label-inline" class="cat" label="Rating"></search:field>
-                                    <search:field name="M2MPrice_s" label="" styling="label-left" prefix="$" class="price"></search:field>
+                                    <search:field name="sku.currentPrice" label="" styling="label-left" prefix="$" class="price"></search:field>
                                 <search:field name="description_t" styling="label-inline" label=""></search:field>
                                     
 

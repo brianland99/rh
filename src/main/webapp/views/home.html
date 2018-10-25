@@ -48,11 +48,11 @@
                                         <layout:grid>
                                             <layout:block md="1-2" class="info">
                                                 <layout:box>
-                                                    <p class="cat">{{result.fields.styleIndicator_s.val | actualValue}}</p>
+                                                    <p class="cat">{{result.fields.categoryName.val | actualValue}}</p>
                                                     <h3>{{result.fields.displayName.val | actualValue}}</h3>
                                                     <p>{{result.fields.selling_point_search.val | actual}}</p>
                                                     <a class="btn" href="#/search/{{result.fields.product.repositoryId.val | actualValue}}">Shop Now</a>
-    <search:field name="product.displayName" label="" styling="description" class="inline-txt"></search:field>
+    <search:field name="displayName" label="" styling="description" class="inline-txt"></search:field>
 
                                                 </layout:box>
                                             </layout:block>
@@ -89,15 +89,15 @@
                                              <!--ng-src="https://www.bhphotovideo.com/images/images500x500/{{result.fields.item_url.val | actualValue}}_{{result.fields.image_name.val | actual}}.jpg"-->
                                              <!--onerror="this.style.display='none';"/>-->
                                           <img class="product-image" ng-if="result.fields.imageURL_s.val"
-                                             ng-src="{{result.fields.imageURL_s.val | actualValue}}"
+                                             ng-src="https://www.restorationhardware.com/sitewide/services/catalog/product-image-service.jsp?productId=prod1700026"
                                              default-src="assets/missing.jpg"/>
                                         <img ng-if="!result.fields.imageURL_s.val"  class="product-image-missing" ng-src="assets/missing.jpg"/>
                                     </div>
                                     <search:field name="styleIndicator_s" styling="label-left" label="" class="cat" >
                                           <search:field name="deviceType_s" styling="label-left" label="" class="cat" ></search:field>
                                     </search:field>
-                                        <search:field name="parentCategory.displayName_str" styling="title" url="#/search/{{result.fields.product.repositoryId.val | actualValue}}"></search:field>
-                                    <search:field name="product.repositoryId" styling="label-left" label="SKU"></search:field>
+                                        <search:field name="parentCategory.displayName_str" styling="title" url="#/search/{{result.fields.productID.val | actualValue}}"></search:field>
+                                    <search:field name="productID" styling="label-left" label="SKU"></search:field>
                                     <search:field name="price" styling="label-left" label="" prefix="$" class="price"></search:field>
 
                                 </search:result>
