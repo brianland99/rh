@@ -97,6 +97,8 @@
                                 </layout:block>. 
                                 -->
                             </layout:grid>
+                            
+<widget:spelling-suggestions response="response" query="query"></widget:spelling-suggestions>
 
                             <div padding-top="1">
                                 <search:response-statistics response="response"></search:response-statistics>
@@ -132,14 +134,17 @@
                                         </div>
                                         <search:field name="sku.fullSkuId_str" styling="label-left" label="SKU" default-value="None"></search:field>
                                           <search:field name="styleIndicator_s" styling="label-left" label="" class="cat" ></search:field>
-                                        <search:field name="taxoCategory_s" styling="label-left" label="" class="cat" ></search:field>
+                                        <search:field name="parentCategory.displayName_str" styling="label-left" label="" class="cat" ></search:field>
 
                             <!-- shows category for accessories             <search:field name="deviceType_s" styling="label-left" label="" class="cat" ></search:field>. -->
 
 
                                         <search:field name="displayName_str" styling="title" url="#/search/{{result.fields.productID.val | actualValue}}"></search:field>
                               
-                                        <search:field name="sku.currentPrice" styling="label-left" label="" class="price" prefix="$"></search:field>
+                                        <search:field ng-if="result.fields.price.val" name="price" styling="label-left" label="" class="price" prefix="$"></search:field>
+
+                                        <search:field ng-if="result.fields.product.sale.val" name="product.sale" styling="label-left" label="" class="price" prefix="$"></search:field>
+
                                     </search:result>
                                 </search:result-list>
 

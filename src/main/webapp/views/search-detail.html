@@ -88,7 +88,7 @@
                 <layout:box>
                     <search:result-list response="response">
                         <search:result>
-                          <search:field name="styleIndicator_s" label="Category" styling="label-left"></search:field>
+                          <search:field name="parentCategory.displayName_str" label="Category" styling="label-left"></search:field>
  
                           <search:field name="manufacturerEscaped_s" label="Manufacturer" styling="label-left"></search:field>
                             <search:field name="skuId_s" label="SKU" styling="label-left"></search:field>
@@ -131,11 +131,11 @@
                                              default-src="assets/missing.jpg"/>
                                             <!--<img ng-if="!result.fields.item_url.val"  class="product-image-missing" ng-src="assets/missing.png"/>                                        &lt;!&ndash;<img class="product-image" ng-src="https://www.bhphotovideo.com/images/images2500x2500/{{result.fields.item_url.val | actualValue}}_{{result.fields.image_name.val | actual}}.jpg" onerror="this.style.display='none';"/>&ndash;&gt;-->
                                         </div>
-                                        <search:field name="taxoStyle_s" styling="label-left" label="" class="cat" ></search:field>
+                                        <search:field name="parentCategory.displayName_str" styling="label-left" label="" class="cat" ></search:field>
                                           <search:field name="deviceType_s" styling="label-left" label="" class="cat" ></search:field>
-                                        <search:field name="productName_s" styling="title" label="" url="#/search/{{result.fields.skuId_s.val | actualValue}}"></search:field>
+                                        <search:field name="displayName_str" styling="title" label="" url="#/search/{{result.fields.skuId_s.val | actualValue}}"></search:field>
                                         <search:field name="skuId_s" styling="label-left" label="SKU" default-value="None"></search:field>
-                                        <search:field name="DeviceOnlyPrice_s" styling="label-left" label="" prefix="$" class="price"></search:field>
+                                        <search:field name="sku.currentPrice" styling="label-left" label="" prefix="$" class="price"></search:field>
                                     </search:result>
                                 </search:result-list>
                             </layout:box>
