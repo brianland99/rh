@@ -86,8 +86,8 @@
 
 
                                     <!-- Specify a facet to show tabs from -->
-                                    <search:tabs response="response" field-name="sku.item" all-label="All" platform="platform" query="query"
-                                                 tabs="rh-catalog11000=Recliners,rh-catalog2051000=Chairs,rh-catalog2051000=Rugs,rh-catalog2051000=Beds,Accessory Chargers=Chargers,Accessory Audio=Audio,Accessory Specialty Items=Specialty Items"></search:tabs>
+                                    <search:tabs response="response" field-name="sku.item_str" all-label="All" platform="platform" query="query"
+                                                 tabs="rh-catalog11000=Recliners,rh-catalog2051000=Chairs,rh-catalog2051000=Rugs,rh-catalog2051000=Beds"></search:tabs>
 
                                 </layout:block>
         <!-- hide sort          <layout:block md="1-4" styling="center-content sortoptions-block">
@@ -97,7 +97,7 @@
                                 </layout:block>. 
                                 -->
                             </layout:grid>
-                            
+
 <widget:spelling-suggestions response="response" query="query"></widget:spelling-suggestions>
 
                             <div padding-top="1">
@@ -110,17 +110,16 @@
 
                         <!-- Results -->
                         <layout:block>
-<!-- attempt to show browse nodes 
-<a href="#/search/{{browseNodes | getUrlForQuery}}">International Tablets</a>
--->
+
 
                             <!-- SEARCH > RESULTS -->
 
                             <!-- Show messages from Fusion -->
-                            <search:message-list response="response" title="You might also want to look at"></search:message-list>
+               <!--BDL hide             <search:message-list response="response" title="You might also want to look at"></search:message-list>
+               -->
 
                             <!--Track Clicks-->
-                            <track:clicks query=query>
+                            <track:clicks type="click" query="query">
 
                                 <!-- Then pick out a few specific fields to show -->
                                 <search:result-list response="response" styling="cards-sm-1 cards-md-3 cards-lg-3">

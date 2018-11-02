@@ -4,7 +4,7 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "appkit-ui": "http://appkit.lucidworks.com/repo/4.0.0-SNAPSHOT/appkit-ui.tar.gz"
+    "appkit-ui": "http://appkit.lucidworks.com/repo/4.1.2/appkit-ui.tar.gz"
   },
   "repository": {},
   "engines": {

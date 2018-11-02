@@ -1,8 +1,8 @@
 {
   "_from": "grunt-cli@^1.2.0",
-  "_id": "grunt-cli@1.2.0",
+  "_id": "grunt-cli@1.3.1",
   "_inBundle": false,
-  "_integrity": "sha1-VisRnrsGndtGSs4oRVAb6Xs1tqg=",
+  "_integrity": "sha512-UwBRu/QpAjDc53DRLEkyilFdL0zenpxu+fddTIlsF/KJqdNcHaQmvyu1W3cDesZ9rqqZdKK5A8+QDIyLUEWoZQ==",
   "_location": "/grunt-cli",
   "_phantomChildren": {},
   "_requested": {
@@ -18,10 +18,10 @@
   "_requiredBy": [
     "/appkit-ui"
   ],
-  "_resolved": "https://registry.npmjs.org/grunt-cli/-/grunt-cli-1.2.0.tgz",
-  "_shasum": "562b119ebb069ddb464ace2845501be97b35b6a8",
+  "_resolved": "https://registry.npmjs.org/grunt-cli/-/grunt-cli-1.3.1.tgz",
+  "_shasum": "b9cb5b7a7200e490711e1ee7cb049c9a815471f0",
   "_spec": "grunt-cli@^1.2.0",
-  "_where": "/Users/junderwood/Projects/templates/fusion-starter/node_modules/appkit-ui",
+  "_where": "/Users/brianland/Documents/git/rh/ui/node_modules/appkit-ui",
   "appveyor_id": "prp6g944b05jsq6d",
   "author": {
     "name": "Grunt Development Team",
@@ -35,19 +35,20 @@
   },
   "bundleDependencies": false,
   "dependencies": {
-    "findup-sync": "~0.3.0",
     "grunt-known-options": "~1.1.0",
-    "nopt": "~3.0.6",
-    "resolve": "~1.1.0"
+    "interpret": "~1.1.0",
+    "liftoff": "~2.5.0",
+    "nopt": "~4.0.1",
+    "v8flags": "~3.0.2"
   },
   "deprecated": false,
   "description": "The grunt command line interface",
   "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-contrib-jshint": "~1.0.0"
+    "grunt": "~1.0.2",
+    "grunt-contrib-jshint": "~1.1.0"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "files": [
     "bin",
@@ -64,5 +65,5 @@
   "scripts": {
     "test": "node bin/grunt test"
   },
-  "version": "1.2.0"
+  "version": "1.3.1"
 }

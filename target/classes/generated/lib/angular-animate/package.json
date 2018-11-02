@@ -1,27 +1,27 @@
 {
-  "_from": "angular-animate@1.6.4",
-  "_id": "angular-animate@1.6.4",
+  "_from": "angular-animate@~1.6.4",
+  "_id": "angular-animate@1.6.10",
   "_inBundle": false,
-  "_integrity": "sha1-0+uQbTmDTy373Zgua416O02QAdI=",
+  "_integrity": "sha512-RU9ZJbTspq0W0x675H5k1DeSgKbAFfp2aiYoNGdlD+wQNKvwwMR5ho+EkDKkx9zE02a5goe8Z6EhhYPQSff9dA==",
   "_location": "/angular-animate",
   "_phantomChildren": {},
   "_requested": {
-    "type": "version",
+    "type": "range",
     "registry": true,
-    "raw": "angular-animate@1.6.4",
+    "raw": "angular-animate@~1.6.4",
     "name": "angular-animate",
     "escapedName": "angular-animate",
-    "rawSpec": "1.6.4",
+    "rawSpec": "~1.6.4",
     "saveSpec": null,
-    "fetchSpec": "1.6.4"
+    "fetchSpec": "~1.6.4"
   },
   "_requiredBy": [
     "/appkit-ui"
   ],
-  "_resolved": "https://registry.npmjs.org/angular-animate/-/angular-animate-1.6.4.tgz",
-  "_shasum": "d3eb906d39834f2dfbdd982e6b8d7a3b4d9001d2",
-  "_spec": "angular-animate@1.6.4",
-  "_where": "/Users/junderwood/Projects/templates/fusion-starter/node_modules/appkit-ui",
+  "_resolved": "https://registry.npmjs.org/angular-animate/-/angular-animate-1.6.10.tgz",
+  "_shasum": "c520f6d341370e34e0a62060c99bcf47b7d7db8c",
+  "_spec": "angular-animate@~1.6.4",
+  "_where": "/Users/brianland/Documents/git/rh/ui/node_modules/appkit-ui",
   "author": {
     "name": "Angular Core Team",
     "email": "angular-core+npm@google.com"
@@ -59,5 +59,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.6.4"
+  "version": "1.6.10"
 }

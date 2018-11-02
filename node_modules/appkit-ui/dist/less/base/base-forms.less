@@ -85,7 +85,8 @@ BASE > FORMS
     }
 
     select {
-        height: 2.25em;
+        // https://github.com/twbs/bootstrap/pull/20874 - Fix incorrect height in Firefox for select boxes.
+        height: ~"calc(2.25em + 2px)";
         border: 1px solid #ccc;
         background-color: white;
     }
@@ -127,7 +128,7 @@ BASE > FORMS
             margin-bottom: 10px;
         }
 
-        input, textarea {
+        input, textarea, button.group-button {
             display: block;
             padding: 10px;
             margin: 0 0 -1px;

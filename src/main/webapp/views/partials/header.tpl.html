@@ -21,19 +21,20 @@
                 <!-- Query Suggestions -->
                 <!--
                 <query-suggestions completion-service="services.suggestions.terms" action="/search"></query-suggestions>
+            -->
 
   <!-- Or Instant Results -->
-  <!--
+  
                 <layout:box>
                     <instant:result-list platform="platform">
                         <search:result>
-                            <search:field name="productName_t" label="" styling="label-inline" url="#/search/{{result | field:'skuId_s' | actual | encodeURIComponent }}"></search:field>
+                            <search:field name="displayName_str" label="" styling="label-inline" url="#/search/{{result | field:'productID' | actual | encodeURIComponent }}"></search:field>
                                        
                         </search:result>
                     </instant:result-list>
                 </layout:box>
 
-                -->
+                
               
  
 

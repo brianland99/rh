@@ -14,6 +14,7 @@
         </encoder>
     </appender>
 
+
     <appender name="logfile" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>./logs/twigkit.log</file>
         <append>true</append>
@@ -44,6 +45,7 @@
 
     <logger name="twigkit" level="DEBUG"/>
     <logger name="twigkit.security.util.RemoteUserUtil" level="ERROR"/>
+    <logger name="twigkit.message.service.fusion.FusionSignalsMessageProducer" level="TRACE"/>
 
 
     <root level="ERROR">

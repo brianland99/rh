@@ -13,7 +13,6 @@
     <widget:spinner></widget:spinner>
 </search:response>
 
-
 <search:platform var="item_recs_platform" conf="platforms.fusion.item_recs"></search:platform>
 
 <!-- Search for customer attributes -->
@@ -115,6 +114,15 @@
                             <layout:box>
                                 <h3>People who viewed this also viewed:</h3>
 
+                                
+                            </layout:box>
+                        </layout:block>
+                    </layout:grid>
+                   <layout:grid  class="info">
+                        <layout:block>
+                            <layout:box>
+                                <h3>People who viewed this also viewed:</h3>
+
                                 <search:result-list response="item_recs_response" styling="cards-sm-1 cards-md-4 cards-lg-4">
                               
                                     <search:result>
@@ -141,6 +149,8 @@
                             </layout:box>
                         </layout:block>
                     </layout:grid>
+
+
 
                 </layout:box>
             </layout:block>
