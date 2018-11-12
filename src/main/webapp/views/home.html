@@ -5,6 +5,8 @@
 <!-- Define a search platform to fetch data from -->
 <search:platform var="platform" conf="platforms.fusion.banner"></search:platform>
 
+<search:platform var="salesPlatform" conf="platforms.fusion.sales"></search:platform>
+
 <!-- Search for customer attributes -->
 <search:query var="query" parameters="none" filters="sku.item_str['Barstool']" max-results="5">
     <query:custom name="userId" value="{{params.userId}}"></query:custom>
@@ -15,8 +17,16 @@
     <query:custom name="userId" value="{{params.userId}}"></query:custom>
 </search:query>
 
+<search:query var="salesQuery" parameters="*"  max-results="4">
+   
+</search:query>
+
 <!-- Send query to platform and retrieve documents back -->
 <search:response var="response" platform="platform" query="query">
+    <widget:spinner></widget:spinner>
+</search:response>
+
+<search:response var="salesResponse" platform="salesPlatform" query="salesQuery">
     <widget:spinner></widget:spinner>
 </search:response>
 
@@ -74,7 +84,7 @@
                     <layout:block class="recommended-wrapper">
                         <layout:box>
                             <h3>Recommendations</h3>
-                            <search:result-list response="response" styling="cards-sm-1 cards-md-4 cards-lg-4">
+                            <search:result-list response="salesResponse" styling="cards-sm-1 cards-md-4 cards-lg-4">
                                 <search:result>
 
                                     <div class="product-image-container">
@@ -96,9 +106,11 @@
                                     <search:field name="styleIndicator_s" styling="label-left" label="" class="cat" >
                                           <search:field name="deviceType_s" styling="label-left" label="" class="cat" ></search:field>
                                     </search:field>
-                                        <search:field name="parentCategory.displayName_str" styling="title" url="#/search/{{result.fields.productID.val | actualValue}}"></search:field>
+                                        <search:field name="productName_s" styling="title" url="#/search/{{result.fields.productID.val | actualValue}}"></search:field>
                                     <search:field name="productID" styling="label-left" label="SKU"></search:field>
                                     <search:field name="price" styling="label-left" label="" prefix="$" class="price"></search:field>
+
+                                         
 
                                 </search:result>
                             </search:result-list>

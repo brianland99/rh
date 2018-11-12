@@ -47,19 +47,22 @@
                      <search:facet facet-name="deviceType_s" show="5" show-more="20" title="Categories">
                        </search:facet>
                        -->
-                       <search:facet facet-name="product.siteId" show="5" show-more="20" title="RH Sites">
-                       </search:facet>
+                        <search:facet facet-name="parentCategory.displayName_str" show="5" show-more="20" title="Parent Category">
+                       </search:facet>     
+                           <search:facet facet-name="categoryName_str" show="5" show-more="20" title="Category">
+                       </search:facet>  
+                       <!--  <search:facet facet-name="product.productCollection_s" show="5" show-more="20" title="Collection">
+                       </search:facet>                --> 
                        <search:facet facet-name="sku.item" show="5" show-more="20" title="Items">
                        </search:facet>
                        <search:facet facet-name="price" show="5" show-more="20" title="Price">
                        </search:facet>
-                       <search:facet facet-name="parentCategory.displayName_str" show="5" show-more="20" title="Parent Category">
+                        <search:facet facet-name="productLink.label_s" show="4" show-more="20" title="Finish">
+                        </search:facet>
+       
+                       <search:facet facet-name="sku.color_s" show="4" show-more="20" title="Color">
                        </search:facet>
-                        <search:facet facet-name="product.productCollection" show="5" show-more="20" title="Collection">
-                       </search:facet>
-                       <search:facet facet-name="sku.color_str" show="4" show-more="20" title="Color">
-                       </search:facet>
-                        <search:facet facet-name="sku.finish_str" show="4" show-more="20" title="Finish">
+                        <search:facet facet-name="sku.finish_s" show="4" show-more="20" title="Finish">
                         </search:facet>
            
 
@@ -86,8 +89,8 @@
 
 
                                     <!-- Specify a facet to show tabs from -->
-                                    <search:tabs response="response" field-name="sku.item_str" all-label="All" platform="platform" query="query"
-                                                 tabs="rh-catalog11000=Recliners,rh-catalog2051000=Chairs,rh-catalog2051000=Rugs,rh-catalog2051000=Beds"></search:tabs>
+                                    <search:tabs response="response" field-name="product.siteId_s" all-label="All" platform="platform" query="query"
+                                                 tabs="RH=RestorationHardware,MO=Modern,TN=Teen,BC=Baby&Child"></search:tabs>
 
                                 </layout:block>
         <!-- hide sort          <layout:block md="1-4" styling="center-content sortoptions-block">
@@ -141,6 +144,10 @@
                                         <search:field name="displayName_str" styling="title" url="#/search/{{result.fields.productID.val | actualValue}}"></search:field>
                               
                                         <search:field ng-if="result.fields.price.val" name="price" styling="label-left" label="" class="price" prefix="$"></search:field>
+
+                                          <search:field  ng-if="salePrice"  name="salePrice" styling="label-left" label="" class="price" prefix="$"></search:field>
+
+                                        
 
                                         <search:field ng-if="result.fields.product.sale.val" name="product.sale" styling="label-left" label="" class="price" prefix="$"></search:field>
 
